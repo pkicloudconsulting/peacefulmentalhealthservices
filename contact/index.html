@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request an Appointment | Peaceful Mental Health Services</title>
+<meta name="description" content="Contact Peaceful Mental Health Services to request an appointment. New patients welcome, telehealth across Virginia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/pmhs.css?ver=pmhs-1">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="crisis-bar">If you or someone you love is in crisis, call or text <a href="tel:988">988</a>, the Suicide and Crisis Lifeline, available 24/7.</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 21c-5-3.5-8-6.8-8-10.5C4 7 6 5 8.5 5c1.4 0 2.7.7 3.5 1.8C12.8 5.7 14.1 5 15.5 5 18 5 20 7 20 10.5c0 3.7-3 7-8 10.5z"/></svg>
+      </span>
+      <span class="brand-name">Peaceful<small>Mental Health Services</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" onclick="const n=document.getElementById('nav');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
+    <nav class="site-nav" id="nav" aria-label="Main navigation">
+      <a href="../" >Home</a>
+      <a href="../services/" >Services</a>
+      <a href="../conditions/" >Conditions We Treat</a>
+      <a href="../about/" >About</a>
+      <a href="../faq/" >FAQ</a>
+      <a class="btn btn-primary" href="../contact/">Request an Appointment</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumbs"><a href="../">Home</a> &rsaquo; Contact</p>
+      <h1>Request an Appointment</h1>
+      <p>Tell us a little about what you are looking for and we will respond within one business day. New patients are welcome.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split" style="align-items:start;">
+      <div class="form-card">
+        <!-- TODO: connect this form to a backend (Formspree, Netlify Forms, or practice EHR intake) before launch -->
+        <form method="post" action="#">
+          <div class="form-grid">
+            <div><label for="fname">First name</label><input id="fname" name="fname" autocomplete="given-name" required></div>
+            <div><label for="lname">Last name</label><input id="lname" name="lname" autocomplete="family-name" required></div>
+            <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="full"><label for="interest">I am interested in</label>
+              <select id="interest" name="interest">
+                <option>New patient evaluation</option>
+                <option>Medication management</option>
+                <option>Psychotherapy</option>
+                <option>Care for my child or teen</option>
+                <option>Pharmacogenomic testing</option>
+                <option>Pre-surgical evaluation</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="full"><label for="msg">Anything you would like us to know? (optional, please do not include sensitive medical details)</label><textarea id="msg" name="msg" rows="4"></textarea></div>
+            <div class="full"><button class="btn btn-accent" type="submit" style="border:none; cursor:pointer;">Send Request</button></div>
+          </div>
+        </form>
+      </div>
+      <div class="prose">
+        <h2 style="margin-top:0;">Other ways to reach us</h2>
+        <p><strong>Phone:</strong> (XXX) XXX-XXXX<br>
+        <strong>Email:</strong> info@ (domain to be confirmed)</p>
+        <p><strong>Hours:</strong> Monday to Friday, 9:00 am to 5:00 pm.</p>
+        <p><strong>Location:</strong> We serve patients across Virginia through secure telehealth, so your appointment happens wherever you are comfortable.</p>
+        <h3>Insurance</h3>
+        <p>We accept most insurance plans, including commercial plans, Medicare, and Medicaid. Self-pay options are available; contact us for details.</p>
+        <div class="footer-crisis" style="background:var(--sand); border-color:var(--line); color:var(--ink-soft);">
+          <p style="margin:0;">Please do not use this form for emergencies. If you are in crisis, call or text <a href="tel:988"><strong>988</strong></a> or call <a href="tel:911"><strong>911</strong></a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-name" style="color:#fff;">Peaceful<small style="color:#8fb6aa;">Mental Health Services</small></span>
+      <p>Compassionate, holistic mental health care for children, adolescents, and adults, delivered through secure telehealth across Virginia.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../services/">Services</a></li>
+        <li><a href="../conditions/">Conditions We Treat</a></li>
+        <li><a href="../about/">About Us</a></li>
+        <li><a href="../faq/">FAQ</a></li>
+        <li><a href="../contact/">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <ul>
+        <li><a href="../services/#evaluations">Psychiatric Evaluations</a></li>
+        <li><a href="../services/#medication">Medication Management</a></li>
+        <li><a href="../services/#psychotherapy">Psychotherapy</a></li>
+        <li><a href="../services/#telehealth">Telehealth Care</a></li>
+        <li><a href="../services/#child">Child and Adolescent Care</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>In crisis?</h3>
+      <div class="footer-crisis">
+        <p>If you are experiencing a mental health emergency, call or text <a href="tel:988"><strong>988</strong></a> (Suicide and Crisis Lifeline) or call <a href="tel:911"><strong>911</strong></a>. This website is not monitored for urgent messages.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 Peaceful Mental Health Services. All rights reserved.</span>
+    <span><a href="../privacy-policy/">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="../accessibility/">Accessibility</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
