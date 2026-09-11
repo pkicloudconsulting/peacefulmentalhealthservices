@@ -8,7 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/pmhs.css?ver=pmhs-1">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../assets/img/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/css/pmhs.css?ver=pmhs-8">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -18,18 +21,35 @@
 <header class="site-header">
   <div class="container">
     <a class="brand" href="../">
-      <span class="brand-mark" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 21c-5-3.5-8-6.8-8-10.5C4 7 6 5 8.5 5c1.4 0 2.7.7 3.5 1.8C12.8 5.7 14.1 5 15.5 5 18 5 20 7 20 10.5c0 3.7-3 7-8 10.5z"/></svg>
+      <span class="brand-mark brand-mark--logo" aria-hidden="true">
+        <img src="../assets/img/logo-mark.png" alt="" width="42" height="42">
       </span>
       <span class="brand-name">Peaceful<small>Mental Health Services</small></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" onclick="const n=document.getElementById('nav');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
     <nav class="site-nav" id="nav" aria-label="Main navigation">
       <a href="../" >Home</a>
-      <a href="../services/" >Services</a>
+      <div class="nav-item"><a href="../services/">Services <span class="nav-caret" aria-hidden="true">&#9660;</span></a>
+        <div class="nav-drop">
+          <a href="../services/#adult">Adult Psychiatric Services</a>
+          <a href="../services/#child">Child Psychiatry Services</a>
+          <a href="../services/#psychotherapy">Psychotherapy</a>
+          <a href="../services/#medication">Medication Management</a>
+          <a href="../services/#evaluations">Diagnostic Evaluations</a>
+          <a href="../services/#telehealth">Telehealth Services</a>
+          <a href="../services/#genesight">GeneSight Testing</a>
+          <a href="../services/#oncology">Oncology Psychotherapy</a>
+          <a href="../services/#bariatric">Bariatric Surgery Psychological Evaluation</a>
+        </div>
+      </div>
       <a href="../conditions/" >Conditions We Treat</a>
       <a href="../about/" >About</a>
-      <a href="../faq/" >FAQ</a>
+      <div class="nav-item"><a href="../insurance/">New Patients <span class="nav-caret" aria-hidden="true">&#9660;</span></a>
+        <div class="nav-drop">
+          <a href="../insurance/">Insurance</a>
+          <a href="../faq/">FAQ</a>
+        </div>
+      </div>
       <a class="btn btn-primary" href="../contact/">Request an Appointment</a>
     </nav>
   </div>
@@ -68,6 +88,10 @@
     <div class="footer-brand">
       <span class="brand-name" style="color:#fff;">Peaceful<small style="color:#8fb6aa;">Mental Health Services</small></span>
       <p>Compassionate, holistic mental health care for children, adolescents, and adults, offered in person and through secure telehealth across Virginia.</p>
+      <ul class="footer-contact">
+        <li><a href="tel:+12403441402">+1 (240) 344-1402</a></li>
+        <li><a href="mailto:office@peacefulmentalhealthservices.com">office@peacefulmentalhealthservices.com</a></li>
+      </ul>
     </div>
     <div>
       <h3>Explore</h3>
@@ -77,6 +101,7 @@
         <li><a href="../conditions/">Conditions We Treat</a></li>
         <li><a href="../about/">About Us</a></li>
         <li><a href="../faq/">FAQ</a></li>
+        <li><a href="../insurance/">Insurance</a></li>
         <li><a href="../contact/">Contact</a></li>
       </ul>
     </div>
@@ -99,6 +124,7 @@
   </div>
   <div class="container footer-bottom">
     <span>&copy; 2026 Peaceful Mental Health Services. All rights reserved.</span>
+    <span>Powered by <a href="https://pkicloudconsulting.com/" target="_blank" rel="noopener">PKI Cloud Consulting</a></span>
     <span><a href="../privacy-policy/">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="../accessibility/">Accessibility</a></span>
   </div>
 </footer>
@@ -133,7 +159,7 @@
     </form>
   </section>
 </div>
-<script src="../assets/chatbot/pmhs-chatbot.js?ver=pmhs-1" defer></script>
+<script src="../assets/chatbot/pmhs-chatbot.js?ver=pmhs-3" defer></script>
 
 </body>
 </html>

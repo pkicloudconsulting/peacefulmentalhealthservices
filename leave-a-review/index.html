@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leave a Review | Peaceful Mental Health Services</title>
+<meta name="description" content="Share your experience with Peaceful Mental Health Services. Leave your name, a star rating, and a short testimonial. It only takes a minute.">
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../assets/img/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<style>
+:root{
+  --teal:#2f6f6a; --teal-dark:#234f4b; --teal-tint:#e3efec; --sage:#8fb6aa;
+  --ink:#21313a; --ink-soft:#46585f; --cream:#fdfbf7; --line:#e4ddd0; --star:#ffc542;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:"Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink);
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:0 16px 48px}
+.pm-rev-head{width:100%;display:flex;justify-content:center;padding:26px 0 6px}
+.pm-rev-head a{display:flex;align-items:center;gap:10px;text-decoration:none}
+.pm-rev-mark{width:44px;height:44px;flex:none;background:#fff;border-radius:50%;
+  overflow:hidden;box-shadow:0 0 0 1px var(--line)}
+.pm-rev-mark img{width:100%;height:100%;object-fit:cover;display:block}
+.pm-rev-brand{font-family:"Fraunces",Georgia,serif;font-size:1.15rem;font-weight:700;color:var(--ink);line-height:1.15}
+.pm-rev-brand small{display:block;font-family:"Nunito Sans",sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.pm-rev-card{width:100%;max-width:480px;background:#fff;border:1px solid var(--line);border-radius:20px;
+  box-shadow:0 18px 50px rgba(33,49,58,.12);padding:28px 24px 26px;margin-top:14px;
+  animation:pm-in .35s cubic-bezier(.18,.89,.32,1.18) both}
+@keyframes pm-in{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
+h1{font-family:"Fraunces",Georgia,serif;font-size:26px;line-height:1.25;margin:0 0 6px;color:var(--teal-dark)}
+.pm-rev-sub{margin:0 0 22px;font-size:15px;line-height:1.5;color:var(--ink-soft)}
+label{display:block;font-weight:700;font-size:14px;color:var(--teal-dark);margin:0 0 7px}
+input[type=text],textarea{width:100%;border:1.5px solid var(--line);border-radius:14px;padding:13px 15px;font-size:16px;
+  font-family:inherit;color:var(--ink);outline:none;background:var(--cream);transition:border-color .14s,box-shadow .14s}
+input[type=text]:focus,textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(47,111,106,.18);background:#fff}
+textarea{min-height:130px;resize:vertical;line-height:1.5}
+.pm-field{margin-bottom:20px}
+/* ----- Stars ----- */
+.pm-stars{display:flex;gap:6px;flex-direction:row}
+.pm-stars input{position:absolute;opacity:0;width:1px;height:1px}
+.pm-stars label{cursor:pointer;font-size:38px;line-height:1;color:#ddd8cc;margin:0;padding:2px;
+  transition:transform .12s ease,color .12s ease;user-select:none}
+.pm-stars label:hover{transform:scale(1.15)}
+.pm-stars.pm-lit-1 label:nth-of-type(-n+1),
+.pm-stars.pm-lit-2 label:nth-of-type(-n+2),
+.pm-stars.pm-lit-3 label:nth-of-type(-n+3),
+.pm-stars.pm-lit-4 label:nth-of-type(-n+4),
+.pm-stars.pm-lit-5 label:nth-of-type(-n+5){color:var(--star)}
+.pm-stars input:focus-visible + label{outline:2px solid var(--teal);outline-offset:2px;border-radius:8px}
+.pm-star-hint{font-size:13px;color:var(--ink-soft);margin-top:6px;min-height:18px;font-weight:600}
+/* ----- Button ----- */
+button.pm-submit{width:100%;border:0;cursor:pointer;margin-top:4px;
+  background:linear-gradient(135deg,var(--teal) 0%,var(--teal-dark) 100%);color:#fff;
+  font-family:inherit;font-weight:800;font-size:17px;letter-spacing:.2px;padding:15px 20px;border-radius:999px;
+  box-shadow:0 10px 28px rgba(35,79,75,.35);transition:transform .15s,box-shadow .15s,opacity .15s}
+button.pm-submit:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(35,79,75,.45)}
+button.pm-submit:active{transform:translateY(0)}
+button.pm-submit[disabled]{opacity:.6;cursor:wait;transform:none}
+.pm-err{display:none;margin:0 0 16px;padding:11px 14px;border-radius:12px;background:#fdf0ef;border:1px solid #f2c9c5;
+  color:#8c2b23;font-size:14px;line-height:1.45}
+.pm-err.show{display:block}
+/* ----- Thank-you ----- */
+.pm-thanks{display:none;text-align:center;padding:14px 4px 6px}
+.pm-thanks.show{display:block}
+.pm-thanks .pm-check{width:74px;height:74px;margin:4px auto 16px;border-radius:50%;
+  background:linear-gradient(135deg,var(--teal),var(--teal-dark));display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 28px rgba(35,79,75,.35);animation:pm-pop .4s cubic-bezier(.18,.89,.32,1.4) both}
+@keyframes pm-pop{from{transform:scale(.4);opacity:0}to{transform:scale(1);opacity:1}}
+.pm-thanks h2{font-family:"Fraunces",Georgia,serif;font-size:22px;margin:0 0 8px;color:var(--teal-dark)}
+.pm-thanks p{font-size:15px;line-height:1.55;color:var(--ink-soft);margin:0 0 18px}
+.pm-thanks .pm-gstars{color:var(--star);font-size:22px;letter-spacing:3px}
+a.pm-google{display:inline-block;text-decoration:none;font-weight:800;font-size:15px;color:var(--teal-dark);
+  border:1.5px solid var(--teal);background:var(--teal-tint);padding:11px 20px;border-radius:999px;transition:background .14s,color .14s}
+a.pm-google:hover{background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:#fff;border-color:transparent}
+.pm-rev-back{margin-top:18px;font-size:14px}
+.pm-rev-back a{color:var(--teal);font-weight:700}
+@media (prefers-reduced-motion:reduce){.pm-rev-card,.pm-thanks .pm-check{animation:none}}
+</style>
+</head>
+<body>
+
+<header class="pm-rev-head">
+  <a href="../">
+    <span class="pm-rev-mark" aria-hidden="true">
+      <img src="../assets/img/logo-mark.png" alt="" width="44" height="44">
+    </span>
+    <span class="pm-rev-brand">Peaceful<small>Mental Health Services</small></span>
+  </a>
+</header>
+
+<main class="pm-rev-card">
+  <form id="pm-rev-form" novalidate>
+    <h1>How did we do?</h1>
+    <p class="pm-rev-sub">Thanks for choosing Peaceful Mental Health Services. Your feedback takes less than a minute and helps us keep improving your care.</p>
+
+    <div class="pm-err" id="pm-rev-err" role="alert"></div>
+
+    <div class="pm-field">
+      <label for="pm-name">Your name</label>
+      <input type="text" id="pm-name" name="name" autocomplete="name" placeholder="e.g. Jane Smith" required>
+    </div>
+
+    <div class="pm-field">
+      <label id="pm-stars-label">Your rating</label>
+      <div class="pm-stars" id="pm-stars" role="radiogroup" aria-labelledby="pm-stars-label">
+        <input type="radio" name="rating" id="pm-star-1" value="1"><label for="pm-star-1" aria-label="1 star">&#9733;</label>
+        <input type="radio" name="rating" id="pm-star-2" value="2"><label for="pm-star-2" aria-label="2 stars">&#9733;</label>
+        <input type="radio" name="rating" id="pm-star-3" value="3"><label for="pm-star-3" aria-label="3 stars">&#9733;</label>
+        <input type="radio" name="rating" id="pm-star-4" value="4"><label for="pm-star-4" aria-label="4 stars">&#9733;</label>
+        <input type="radio" name="rating" id="pm-star-5" value="5"><label for="pm-star-5" aria-label="5 stars">&#9733;</label>
+      </div>
+      <div class="pm-star-hint" id="pm-star-hint">Tap a star to rate us</div>
+    </div>
+
+    <div class="pm-field">
+      <label for="pm-text">Your testimonial</label>
+      <textarea id="pm-text" name="testimonial" placeholder="Tell us about your experience with our care team. Please do not include sensitive medical details." required></textarea>
+    </div>
+
+    <button type="submit" class="pm-submit" id="pm-rev-submit">Send my review</button>
+  </form>
+
+  <div class="pm-thanks" id="pm-thanks">
+    <div class="pm-check" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h2>Thank you<span id="pm-thanks-name"></span>!</h2>
+    <div class="pm-gstars" id="pm-thanks-stars" aria-hidden="true"></div>
+    <p>Your review has been sent to our team. It means a lot to everyone at Peaceful Mental Health Services.</p>
+    <p>Would you also share it publicly? It really helps others find our care.</p>
+    <a class="pm-google" href="https://www.google.com/maps/search/?api=1&amp;query=Peaceful+Mental+Health+Services+Virginia" target="_blank" rel="noopener">Post it on Google &rarr;</a>
+  </div>
+</main>
+
+<p class="pm-rev-back"><a href="../">&larr; Back to the website</a></p>
+
+<script>
+(function () {
+  "use strict";
+  var form = document.getElementById("pm-rev-form");
+  var stars = document.getElementById("pm-stars");
+  var hint = document.getElementById("pm-star-hint");
+  var err = document.getElementById("pm-rev-err");
+  var btn = document.getElementById("pm-rev-submit");
+  var LABELS = ["", "Poor", "Fair", "Good", "Very good", "Excellent"];
+
+  function rating() {
+    var r = form.querySelector('input[name="rating"]:checked');
+    return r ? parseInt(r.value, 10) : 0;
+  }
+  function paint(n) {
+    stars.className = "pm-stars" + (n ? " pm-lit-" + n : "");
+    hint.textContent = n ? LABELS[n] + ", " + n + " of 5 stars" : "Tap a star to rate us";
+  }
+  stars.addEventListener("change", function () { paint(rating()); });
+  // hover preview (mouse only)
+  stars.querySelectorAll("label").forEach(function (l, i) {
+    l.addEventListener("mouseenter", function () { stars.className = "pm-stars pm-lit-" + (i + 1); });
+  });
+  stars.addEventListener("mouseleave", function () { paint(rating()); });
+
+  function fail(msg) {
+    err.textContent = msg;
+    err.classList.add("show");
+    btn.disabled = false;
+    btn.textContent = "Send my review";
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    err.classList.remove("show");
+    var name = document.getElementById("pm-name").value.trim();
+    var text = document.getElementById("pm-text").value.trim();
+    var r = rating();
+    if (!name) return fail("Please enter your name.");
+    if (!r) return fail("Please tap a star to choose your rating.");
+    if (!text) return fail("Please write a sentence or two about your experience.");
+
+    btn.disabled = true;
+    btn.textContent = "Sending…";
+
+    /* DUMMY MODE, no backend yet.
+       The review is kept in this browser's localStorage under "pmhs-reviews"
+       so submissions can be inspected (DevTools > Application > Local Storage).
+       When a database/API is ready, replace saveReview() with a fetch() POST
+       to the endpoint and call done(name, r) on success / fail(msg) on error. */
+    saveReview({
+      name: name,
+      rating: r,
+      testimonial: text,
+      submittedAt: new Date().toISOString(),
+      userAgent: navigator.userAgent
+    });
+    setTimeout(function () { done(name, r); }, 700); // simulate network delay
+  });
+
+  function saveReview(review) {
+    try {
+      var all = JSON.parse(localStorage.getItem("pmhs-reviews") || "[]");
+      all.push(review);
+      localStorage.setItem("pmhs-reviews", JSON.stringify(all));
+    } catch (e) { /* storage unavailable (private mode), dummy mode, ignore */ }
+  }
+
+  function done(name, r) {
+    form.style.display = "none";
+    document.getElementById("pm-thanks-name").textContent = ", " + name.split(" ")[0];
+    document.getElementById("pm-thanks-stars").textContent = "★★★★★".slice(0, r);
+    document.getElementById("pm-thanks").classList.add("show");
+    window.scrollTo({ top: 0 });
+  }
+})();
+</script>
+</body>
+</html>

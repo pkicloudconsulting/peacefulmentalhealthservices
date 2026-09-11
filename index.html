@@ -11,7 +11,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/pmhs.css?ver=pmhs-1">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32">
+<link rel="icon" href="assets/img/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/pmhs.css?ver=pmhs-8">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -21,18 +24,35 @@
 <header class="site-header">
   <div class="container">
     <a class="brand" href="./">
-      <span class="brand-mark" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 21c-5-3.5-8-6.8-8-10.5C4 7 6 5 8.5 5c1.4 0 2.7.7 3.5 1.8C12.8 5.7 14.1 5 15.5 5 18 5 20 7 20 10.5c0 3.7-3 7-8 10.5z"/></svg>
+      <span class="brand-mark brand-mark--logo" aria-hidden="true">
+        <img src="assets/img/logo-mark.png" alt="" width="42" height="42">
       </span>
       <span class="brand-name">Peaceful<small>Mental Health Services</small></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" onclick="const n=document.getElementById('nav');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
     <nav class="site-nav" id="nav" aria-label="Main navigation">
       <a href="./" aria-current="page">Home</a>
-      <a href="services/">Services</a>
+      <div class="nav-item"><a href="services/">Services <span class="nav-caret" aria-hidden="true">&#9660;</span></a>
+        <div class="nav-drop">
+          <a href="services/#adult">Adult Psychiatric Services</a>
+          <a href="services/#child">Child Psychiatry Services</a>
+          <a href="services/#psychotherapy">Psychotherapy</a>
+          <a href="services/#medication">Medication Management</a>
+          <a href="services/#evaluations">Diagnostic Evaluations</a>
+          <a href="services/#telehealth">Telehealth Services</a>
+          <a href="services/#genesight">GeneSight Testing</a>
+          <a href="services/#oncology">Oncology Psychotherapy</a>
+          <a href="services/#bariatric">Bariatric Surgery Psychological Evaluation</a>
+        </div>
+      </div>
       <a href="conditions/">Conditions We Treat</a>
       <a href="about/">About</a>
-      <a href="faq/">FAQ</a>
+      <div class="nav-item"><a href="insurance/">New Patients <span class="nav-caret" aria-hidden="true">&#9660;</span></a>
+        <div class="nav-drop">
+          <a href="insurance/">Insurance</a>
+          <a href="faq/">FAQ</a>
+        </div>
+      </div>
       <a class="btn btn-primary" href="contact/">Request an Appointment</a>
     </nav>
   </div>
@@ -41,34 +61,18 @@
 <main id="main">
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="hero-eyebrow">Telehealth across Virginia</span>
-        <h1>Find your calm. Reclaim your life.</h1>
-        <p class="lede">Peaceful Mental Health Services provides compassionate, holistic psychiatric care for children, adolescents, and adults. We look beyond symptoms to the whole person: mind, body, and spirit.</p>
+  <section class="hero hero-photo">
+    <div class="container">
+      <div class="hero-copy">
+        <span class="hero-eyebrow">Now accepting new patients &middot; Telehealth across Virginia</span>
+        <h1>Care that listens. Care that lasts.</h1>
+        <p class="lede lede-strong">Real clinicians who know your story.</p>
+        <p class="lede">Peaceful Mental Health Services is an independent, clinician-led practice caring for children, adolescents, and adults across Virginia. Every visit is unhurried, every plan is built around your life, and we sort out the insurance and paperwork so you can focus on feeling better.</p>
         <div class="hero-ctas">
-          <a class="btn btn-accent" href="contact/">Request an Appointment</a>
-          <a class="btn btn-ghost" href="services/">Explore Our Services</a>
+          <a class="btn btn-accent" href="contact/">Get Started</a>
+          <a class="btn btn-ghost" href="services/">Learn More</a>
         </div>
-        <p class="hero-note">Now welcoming new patients. Most insurance plans accepted, including commercial plans, Medicare, and Medicaid.</p>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <!-- IMAGE SLOT: hero photo. When generated, save as assets/img/hero.webp,
-             then replace the svg below with:
-             <img src="assets/img/hero.webp" alt="" style="border-radius:28px; box-shadow:0 10px 30px rgba(33,49,58,0.15);">
-             Prompts in HERO-IMAGE-PROMPT.md -->
-        <svg viewBox="0 0 420 380" width="100%" height="100%" role="img" aria-hidden="true">
-          <circle cx="230" cy="180" r="150" fill="#e3efec"/>
-          <circle cx="230" cy="180" r="112" fill="#cde3dc"/>
-          <circle cx="230" cy="180" r="74" fill="#8fb6aa"/>
-          <path d="M230 128c14 22 14 44 0 66-14-22-14-44 0-66z" fill="#fdfbf7"/>
-          <path d="M196 150c24 6 38 22 42 46-24-6-38-22-42-46z" fill="#fdfbf7" opacity="0.9"/>
-          <path d="M264 150c-24 6-38 22-42 46 24-6 38-22 42-46z" fill="#fdfbf7" opacity="0.9"/>
-          <circle cx="80" cy="70" r="14" fill="#d98e5f" opacity="0.55"/>
-          <circle cx="380" cy="300" r="20" fill="#d98e5f" opacity="0.35"/>
-          <circle cx="60" cy="300" r="8" fill="#2f6f6a" opacity="0.4"/>
-        </svg>
+        <p class="hero-note">Most insurance plans accepted, including commercial plans, Medicare, and Medicaid.</p>
       </div>
     </div>
     <svg class="hero-wave" viewBox="0 0 1440 70" preserveAspectRatio="none" width="100%" height="70" aria-hidden="true">
@@ -84,61 +88,49 @@
         <h2>Care built around you, not a diagnosis code</h2>
         <p>Every treatment plan is individualized. We combine evidence-based medicine with wellness strategies, because one size never fits all.</p>
       </div>
-      <div class="card-grid">
-        <div class="card">
-          <span class="icon-chip" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 3a6 6 0 0 0-6 6c0 2 .8 3.4 2 4.6V17h8v-2h2a1 1 0 0 0 1-1v-2h1.5l-2-3.5A6 6 0 0 0 9 3z"/></svg></span>
-          <h3>Adult Psychiatric Services</h3>
-          <p>Comprehensive evaluation and medication management for adults, tailored to your history, your goals, and your life.</p>
-          <a class="card-link" href="services/#adult">Learn more</a>
-        </div>
-        <div class="card">
-          <span class="icon-chip" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M4 20c0-3 2.2-5 5-5s5 2 5 5"/><circle cx="17" cy="10" r="2.2"/><path d="M15 20c0-2.2 1.6-3.8 4-3.8 1 0 1.8.3 2.4.8"/></svg></span>
-          <h3>Child Psychiatry Services</h3>
-          <p>Gentle, developmentally informed mental health care for children and adolescents, in partnership with parents and caregivers.</p>
-          <a class="card-link" href="services/#child">Learn more</a>
-        </div>
-        <div class="card">
-          <span class="icon-chip" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12a8 8 0 1 0-3.1 6.3L21 20l-.9-3.2A7.9 7.9 0 0 0 21 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg></span>
-          <h3>Psychotherapy</h3>
-          <p>A safe, judgment-free space to process, heal, and grow with a therapist who listens first and tailors every session to you.</p>
-          <a class="card-link" href="services/#psychotherapy">Learn more</a>
-        </div>
-        <div class="card">
-          <span class="icon-chip" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="7" width="16" height="13" rx="3"/><path d="M9 7V5a3 3 0 0 1 6 0v2M12 11v5M9.5 13.5h5"/></svg></span>
-          <h3>Medication Management</h3>
-          <p>Expert evaluation and ongoing management of psychiatric medications, adjusted carefully so treatment works with your life.</p>
-          <a class="card-link" href="services/#medication">Learn more</a>
-        </div>
-        <div class="card">
-          <span class="icon-chip" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
-          <h3>Diagnostic Evaluations</h3>
-          <p>Thorough assessments that take the time to understand your condition, so treatment starts from clear answers.</p>
-          <a class="card-link" href="services/#evaluations">Learn more</a>
-        </div>
-        <div class="card">
-          <span class="icon-chip" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
-          <h3>Telehealth Services</h3>
-          <p>Secure, user-friendly video visits that bring the same high-quality care to your living room, anywhere in Virginia.</p>
-          <a class="card-link" href="services/#telehealth">Learn more</a>
-        </div>
-        <div class="card">
-          <span class="icon-chip" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 3v7a6 6 0 0 0 12 0V3M6 3h12M9 21h6M12 16v5"/></svg></span>
-          <h3>GeneSight Testing</h3>
-          <p>Genetic insight into how your body responds to psychiatric medications, helping us find the right medication sooner.</p>
-          <a class="card-link" href="services/#genesight">Learn more</a>
-        </div>
-        <div class="card">
-          <span class="icon-chip" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 21c-5-3.5-8-6.8-8-10.5C4 7 6 5 8.5 5c1.4 0 2.7.7 3.5 1.8C12.8 5.7 14.1 5 15.5 5 18 5 20 7 20 10.5c0 3.7-3 7-8 10.5z"/></svg></span>
-          <h3>Oncology Psychotherapy</h3>
-          <p>Specialized therapy for people navigating cancer, supporting patients and families through diagnosis, treatment, and beyond.</p>
-          <a class="card-link" href="services/#oncology">Learn more</a>
-        </div>
-        <div class="card">
-          <span class="icon-chip" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></span>
-          <h3>Bariatric Surgery Psychological Evaluation</h3>
-          <p>Pre-surgical mental health assessments that satisfy program requirements while genuinely preparing you for the road ahead.</p>
-          <a class="card-link" href="services/#bariatric">Learn more</a>
-        </div>
+      <div class="svc-photos">
+        <a class="svc-photo-card" href="services/#adult">
+          <span class="svc-photo"><img src="assets/img/service-therapy.jpeg" alt="" width="846" height="846" loading="lazy" decoding="async"></span>
+          <span class="svc-photo-body">
+            <h3>Adult Psychiatric Services</h3>
+            <p>Comprehensive evaluation and medication management for adults, tailored to your history, your goals, and your life.</p>
+          </span>
+        </a>
+        <a class="svc-photo-card" href="services/#child">
+          <span class="svc-photo"><img src="assets/img/service-child-play.jpeg" alt="" width="846" height="846" loading="lazy" decoding="async"></span>
+          <span class="svc-photo-body">
+            <h3>Child Psychiatry Services</h3>
+            <p>Gentle, developmentally informed mental health care for children and adolescents, in partnership with parents and caregivers.</p>
+          </span>
+        </a>
+        <a class="svc-photo-card" href="services/#psychotherapy">
+          <span class="svc-photo"><img src="assets/img/service-teen-talk.jpeg" alt="" width="846" height="846" loading="lazy" decoding="async"></span>
+          <span class="svc-photo-body">
+            <h3>Psychotherapy</h3>
+            <p>A safe, judgment-free space to process, heal, and grow with a therapist who listens first and tailors every session to you.</p>
+          </span>
+        </a>
+        <a class="svc-photo-card" href="services/#medication">
+          <span class="svc-photo"><img src="assets/img/service-balance.jpeg" alt="" width="846" height="846" loading="lazy" decoding="async"></span>
+          <span class="svc-photo-body">
+            <h3>Medication Management</h3>
+            <p>Expert evaluation and ongoing management of psychiatric medications, adjusted carefully so treatment works with your life.</p>
+          </span>
+        </a>
+        <a class="svc-photo-card" href="services/#evaluations">
+          <span class="svc-photo"><img src="assets/img/service-insurance.jpeg" alt="" width="846" height="846" loading="lazy" decoding="async"></span>
+          <span class="svc-photo-body">
+            <h3>Diagnostic Evaluations</h3>
+            <p>Thorough assessments that take the time to understand your condition, so treatment starts from clear answers.</p>
+          </span>
+        </a>
+        <a class="svc-photo-card" href="services/#telehealth">
+          <span class="svc-photo"><img src="assets/img/service-telehealth.jpeg" alt="" width="1570" height="1002" loading="lazy" decoding="async" style="object-position: 42% 50%;"></span>
+          <span class="svc-photo-body">
+            <h3>Telehealth Services</h3>
+            <p>Secure, user-friendly video visits that bring the same high-quality care to your living room, anywhere in Virginia.</p>
+          </span>
+        </a>
       </div>
       <div style="text-align:center; margin-top: 2.4rem;">
         <a class="btn btn-primary" href="services/">See all services</a>
@@ -160,17 +152,16 @@
           <circle cx="150" cy="120" r="34" fill="#2f6f6a" opacity="0.9"/>
           <text x="150" y="126" text-anchor="middle" fill="#fff" font-family="Georgia" font-size="13">You</text>
           <text x="150" y="20" text-anchor="middle" fill="#234f4b" font-family="Georgia" font-size="15">Mind</text>
-          <text x="42" y="230" text-anchor="middle" fill="#234f4b" font-family="Georgia" font-size="15">Body</text>
-          <text x="258" y="230" text-anchor="middle" fill="#234f4b" font-family="Georgia" font-size="15">Spirit</text>
+          <text x="150" y="250" text-anchor="middle" fill="#234f4b" font-family="Georgia" font-size="15">Body</text>
           <circle cx="150" cy="30" r="6" fill="#d98e5f"/>
-          <circle cx="55" cy="210" r="6" fill="#d98e5f"/>
-          <circle cx="245" cy="210" r="6" fill="#d98e5f"/>
+          <circle cx="150" cy="210" r="6" fill="#d98e5f"/>
         </svg>
       </div>
       <div>
         <p class="eyebrow">Our philosophy</p>
-        <h2>A holistic approach that honors the whole person</h2>
-        <p style="color:var(--ink-soft); margin-top:0.9rem;">Lasting mental wellness rarely comes from a prescription alone. We address not only your diagnosis and symptoms but the underlying factors that shape them: sleep, stress, relationships, physical health, and purpose.</p>
+        <h2>Whole-person care for mind and body</h2>
+        <p style="color:var(--ink-soft); margin-top:0.9rem;">We built this practice on continuity: you see the same provider at every visit, someone with time to truly listen. Lasting wellness rarely comes from a prescription alone, so we care for mind and body together, looking at the sleep, stress, relationships, and physical health that shape how you feel.</p>
+        <p style="color:var(--ink-soft); margin-top:0.9rem; font-weight:700;">High-touch, collaborative care, covered by your insurance and scheduled around your life.</p>
         <ul class="checklist">
           <li><span class="check" aria-hidden="true">&#10003;</span><span><strong>Patient-centered care.</strong> You are an active participant in every decision, never a passive recipient.</span></li>
           <li><span class="check" aria-hidden="true">&#10003;</span><span><strong>Evidence-based treatment.</strong> Plans grounded in current science, combining therapy and medication when needed.</span></li>
@@ -245,6 +236,37 @@
     </div>
   </section>
 
+  <!-- Testimonials -->
+  <section class="section" aria-label="Testimonials">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Testimonials</p>
+        <h2>What Families &amp; Patients Say</h2>
+        <p>Compassionate, expert mental health care delivered wherever you are.</p>
+      </div>
+      <div class="tst-grid">
+        <figure class="tst-card">
+          <div class="tst-quote" aria-hidden="true">&ldquo;</div>
+          <div class="tst-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="tst-text">Getting my daughter seen from home took so much stress off our family. Her provider truly listens, and they explained every step of her treatment plan along the way.</blockquote>
+          <figcaption class="tst-person"><span class="tst-avatar"><img src="assets/img/testimonial-denise.jpeg" alt="Denise R." width="52" height="52" loading="lazy" decoding="async"></span><span><span class="tst-name">Denise R.</span><br><span class="tst-role">Parent</span></span></figcaption>
+        </figure>
+        <figure class="tst-card">
+          <div class="tst-quote" aria-hidden="true">&ldquo;</div>
+          <div class="tst-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="tst-text">After years of rotating providers, I finally see the same doctor at every visit. They adjusted my medication carefully and caught problems early. I feel like myself again.</blockquote>
+          <figcaption class="tst-person"><span class="tst-avatar"><img src="assets/img/testimonial-james.jpeg" alt="James M." width="52" height="52" loading="lazy" decoding="async"></span><span><span class="tst-name">James M.</span><br><span class="tst-role">Patient</span></span></figcaption>
+        </figure>
+        <figure class="tst-card">
+          <div class="tst-quote" aria-hidden="true">&ldquo;</div>
+          <div class="tst-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="tst-text">The personalized treatment plan made all the difference. They coordinated directly with my primary care doctor, so everyone was on the same page. Professional, kind, and truly patient-centered.</blockquote>
+          <figcaption class="tst-person"><span class="tst-avatar"><img src="assets/img/testimonial-patricia.jpeg" alt="Patricia A." width="52" height="52" loading="lazy" decoding="async"></span><span><span class="tst-name">Patricia A.</span><br><span class="tst-role">Patient</span></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="section" style="padding-top:0;">
     <div class="container">
@@ -263,6 +285,10 @@
     <div class="footer-brand">
       <span class="brand-name" style="color:#fff;">Peaceful<small style="color:#8fb6aa;">Mental Health Services</small></span>
       <p>Compassionate, holistic mental health care for children, adolescents, and adults, offered in person and through secure telehealth across Virginia.</p>
+      <ul class="footer-contact">
+        <li><a href="tel:+12403441402">+1 (240) 344-1402</a></li>
+        <li><a href="mailto:office@peacefulmentalhealthservices.com">office@peacefulmentalhealthservices.com</a></li>
+      </ul>
     </div>
     <div>
       <h3>Explore</h3>
@@ -272,6 +298,7 @@
         <li><a href="conditions/">Conditions We Treat</a></li>
         <li><a href="about/">About Us</a></li>
         <li><a href="faq/">FAQ</a></li>
+        <li><a href="insurance/">Insurance</a></li>
         <li><a href="contact/">Contact</a></li>
       </ul>
     </div>
@@ -294,6 +321,7 @@
   </div>
   <div class="container footer-bottom">
     <span>&copy; 2026 Peaceful Mental Health Services. All rights reserved.</span>
+    <span>Powered by <a href="https://pkicloudconsulting.com/" target="_blank" rel="noopener">PKI Cloud Consulting</a></span>
     <span><a href="privacy-policy/">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="accessibility/">Accessibility</a></span>
   </div>
 </footer>
@@ -328,7 +356,36 @@
     </form>
   </section>
 </div>
-<script src="assets/chatbot/pmhs-chatbot.js?ver=pmhs-1" defer></script>
+<script src="assets/chatbot/pmhs-chatbot.js?ver=pmhs-3" defer></script>
+
+<!-- ===== Leave-a-review QR widget ===== -->
+<style id="pm-gqr-style">
+.pm-gqr{position:fixed;left:20px;bottom:20px;z-index:9998;display:none;font-family:"Nunito Sans",sans-serif;}
+@media (min-width:767px){.pm-gqr{display:block;}}
+.pm-gqr__card{position:relative;display:flex;align-items:center;gap:11px;text-decoration:none;background:linear-gradient(135deg,#2f6f6a 0%,#234f4b 100%);color:#fff;border-radius:15px;padding:11px 12px;max-width:196px;box-shadow:0 14px 34px -16px rgba(33,49,58,.6);border:1px solid rgba(255,255,255,.10);animation:pm-gqr-in .5s cubic-bezier(.2,.7,.2,1) both;}
+.pm-gqr__card:hover{transform:translateY(-2px);box-shadow:0 20px 42px -14px rgba(33,49,58,.65);}
+.pm-gqr__card,.pm-gqr__card:hover{transition:transform .2s ease,box-shadow .2s ease;}
+@keyframes pm-gqr-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.pm-gqr__qr{flex:none;background:#fff;border-radius:9px;padding:5px;line-height:0;}
+.pm-gqr__qr img{width:60px;height:60px;display:block;}
+.pm-gqr__stars{color:#ffc542;font-size:11px;letter-spacing:1.5px;line-height:1;}
+.pm-gqr__title{display:block;margin-top:4px;font-size:13.5px;font-weight:700;line-height:1.3;max-width:112px;}.pm-gqr__click{display:none;}@media (max-width:1023px){.pm-gqr__scan{display:none;}.pm-gqr__click{display:inline;}}
+.pm-gqr__close{position:absolute;top:-8px;right:-8px;width:22px;height:22px;border-radius:50%;border:none;background:#fff;color:#234f4b;font-size:14px;line-height:20px;font-weight:700;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,.28);padding:0;}
+.pm-gqr__close:hover{background:#e3efec;}
+@media (prefers-reduced-motion:reduce){.pm-gqr__card{animation:none;transition:none;}.pm-gqr__card:hover{transform:none;}}
+</style>
+<div class="pm-gqr" id="pmGqr">
+  <button type="button" class="pm-gqr__close" aria-label="Dismiss" onclick="var w=document.getElementById('pmGqr');w.style.display='none';try{sessionStorage.setItem('pmGqrHidden','1');}catch(e){}">&times;</button>
+  <a class="pm-gqr__card" href="leave-a-review/" aria-label="Scan the code to leave us a review">
+    <span class="pm-gqr__qr"><img src="assets/img/review-page-qr.png" width="60" height="60" alt="QR code to leave Peaceful Mental Health Services a review" loading="lazy" decoding="async"></span>
+    <span>
+      <span class="pm-gqr__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="pm-gqr__title"><span class="pm-gqr__scan">Scan</span><span class="pm-gqr__click">Click</span> &amp; leave us a review</span>
+    </span>
+  </a>
+</div>
+<script>try{if(sessionStorage.getItem('pmGqrHidden')){var w=document.getElementById('pmGqr');if(w)w.style.display='none';}}catch(e){}</script>
+<!-- /Leave-a-review QR widget -->
 
 </body>
 </html>
