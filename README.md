@@ -2,7 +2,7 @@
 
 Static marketing site for Peaceful Mental Health Services, a holistic telehealth
 psychiatric practice serving Virginia. Hand-written HTML/CSS, no build step,
-deployed to GitHub Pages by `.github/workflows/pages.yml` on every push to `main`.
+deployed by GitHub Pages branch mode (Settings > Pages > Deploy from a branch: main, root) on every push to `main`.
 
 ## Structure
 
