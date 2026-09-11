@@ -191,8 +191,15 @@ img, svg { max-width: 100%; display: block; }
 .hero-photo .btn-ghost:hover { background: rgba(255, 255, 255, 0.18); }
 .hero-photo .hero-wave { margin-top: auto; }
 @media (max-width: 900px) {
-  .hero-photo { aspect-ratio: auto; min-height: 0; padding-bottom: 0.5rem; }
-  .hero-photo::before { background: rgba(27, 43, 48, 0.55); }
+  /* keep the subject (face + laptop) in frame on narrow screens, like the reference site:
+     cover-crop anchored at 55% x, taller hero, and a top-heavy veil so the lower image shows */
+  .hero-photo {
+    aspect-ratio: auto; min-height: 580px; padding-bottom: 0.5rem;
+    background-position: 55% center;
+  }
+  .hero-photo::before {
+    background: linear-gradient(180deg, rgba(27, 43, 48, 0.74) 0%, rgba(27, 43, 48, 0.5) 55%, rgba(27, 43, 48, 0.2) 100%);
+  }
 }
 
 /* ---------- Sections ---------- */
@@ -414,6 +421,7 @@ details.faq p { margin-top: 0.8rem; color: var(--ink-soft); }
 .site-footer a:hover { color: #fff; text-decoration: underline; }
 .site-footer ul { list-style: none; display: grid; gap: 0.55rem; font-size: 0.95rem; }
 .footer-brand p { font-size: 0.95rem; max-width: 34ch; margin-top: 0.9rem; }
+.footer-brand .brand { text-decoration: none; }
 .footer-contact { margin-top: 0.9rem; }
 .footer-contact a { font-weight: 700; }
 .footer-crisis {
