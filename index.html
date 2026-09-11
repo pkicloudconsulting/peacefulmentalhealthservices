@@ -14,7 +14,7 @@
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32">
 <link rel="icon" href="assets/img/favicon-192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/css/pmhs.css?ver=pmhs-9">
+<link rel="stylesheet" href="assets/css/pmhs.css?ver=pmhs-10">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -29,7 +29,10 @@
       </span>
       <span class="brand-name">Peaceful<small>Mental Health Services</small></span>
     </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" onclick="const n=document.getElementById('nav');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu" onclick="const n=document.getElementById('nav');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+      <svg class="nav-toggle__bars" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></svg>
+      <svg class="nav-toggle__close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
     <nav class="site-nav" id="nav" aria-label="Main navigation">
       <a href="./" aria-current="page">Home</a>
       <div class="nav-item"><a href="services/">Services <span class="nav-caret" aria-hidden="true">&#9660;</span></a>

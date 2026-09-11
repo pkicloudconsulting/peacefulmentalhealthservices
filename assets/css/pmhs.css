@@ -108,7 +108,11 @@ img, svg { max-width: 100%; display: block; }
 .site-nav a.btn { color: #fff; border-bottom: none; padding-block: 0.8rem; }
 .site-nav a.btn:hover { color: #fff; border-bottom: none; }
 
-.nav-toggle { display: none; background: none; border: 1px solid var(--line); border-radius: 10px; padding: 0.45rem 0.6rem; cursor: pointer; color: var(--ink); }
+.nav-toggle { display: none; background: none; border: 1px solid var(--line); border-radius: 10px; padding: 0.5rem 0.55rem; cursor: pointer; color: var(--teal-dark); }
+.nav-toggle svg { display: block; }
+.nav-toggle .nav-toggle__close { display: none; }
+.nav-toggle[aria-expanded="true"] .nav-toggle__bars { display: none; }
+.nav-toggle[aria-expanded="true"] .nav-toggle__close { display: block; }
 
 /* nav dropdowns (Services, New Patients) */
 .nav-item { position: relative; }
