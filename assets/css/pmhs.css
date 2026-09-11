@@ -450,6 +450,16 @@ details.faq p { margin-top: 0.8rem; color: var(--ink-soft); }
 }
 
 @media (max-width: 640px) {
+  /* tighter type on phones */
+  body { font-size: 1rem; }
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.5rem; }
+  .hero-eyebrow { font-size: 0.72rem; }
+  .hero-copy .lede-strong { font-size: 1.08rem; }
+  .hero-copy p.lede { font-size: 1rem; margin-top: 0.9rem; }
+  .hero-copy .hero-ctas { margin-top: 1.3rem; }
+  .hero-note { font-size: 0.82rem; }
+  .hero-photo { min-height: 540px; }
   .site-nav {
     display: none; position: absolute; top: 100%; left: 0; right: 0;
     background: var(--cream); border-bottom: 1px solid var(--line);
