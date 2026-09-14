@@ -306,6 +306,11 @@ a.card:hover .card-link { text-decoration: underline; text-underline-offset: 3px
 }
 .pill:hover { transform: translateY(-3px); border-color: var(--sage); color: var(--ink); }
 .pill .dot { flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--sage); margin-top: 0.55rem; }
+/* insurer brand icons on the insurance page pills */
+.ins-pills .pill { align-items: center; }
+.ins-pills .pill .dot { margin-top: 0; margin-inline: 10px; }
+.pill .ins-logo { flex: none; width: 30px; height: 30px; border-radius: 7px; overflow: hidden; }
+.pill .ins-logo img { width: 100%; height: 100%; object-fit: contain; }
 .pill strong { display: block; font-size: 1rem; }
 .pill span { font-size: 0.88rem; color: var(--ink-soft); }
 
