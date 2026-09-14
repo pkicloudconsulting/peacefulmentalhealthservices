@@ -450,16 +450,23 @@ details.faq p { margin-top: 0.8rem; color: var(--ink-soft); }
 }
 
 @media (max-width: 640px) {
-  /* tighter type on phones */
-  body { font-size: 1rem; }
-  h1 { font-size: 1.9rem; }
-  h2 { font-size: 1.5rem; }
-  .hero-eyebrow { font-size: 0.72rem; }
-  .hero-copy .lede-strong { font-size: 1.08rem; }
-  .hero-copy p.lede { font-size: 1rem; margin-top: 0.9rem; }
-  .hero-copy .hero-ctas { margin-top: 1.3rem; }
-  .hero-note { font-size: 0.82rem; }
+  /* fluid phone type: sizes track the viewport width so copy always fits,
+     and the hero image stays visible behind a lighter veil */
+  body { font-size: clamp(0.9rem, 3.9vw, 1rem); }
+  h1 { font-size: clamp(1.45rem, 6.6vw, 1.85rem); }
+  h2 { font-size: clamp(1.25rem, 5.4vw, 1.5rem); }
+  h3 { font-size: clamp(1.05rem, 4.6vw, 1.25rem); }
+  .crisis-bar { font-size: 0.72rem; }
+  .hero-eyebrow { font-size: clamp(0.56rem, 2.6vw, 0.68rem); padding: 0.28rem 0.7rem; margin-bottom: 0.9rem; }
+  .hero-copy .lede-strong { font-size: clamp(0.95rem, 4.2vw, 1.05rem); }
+  .hero-copy p.lede { font-size: clamp(0.85rem, 3.8vw, 0.95rem); margin-top: 0.8rem; }
+  .hero-copy .hero-ctas { margin-top: 1.2rem; gap: 0.7rem; }
+  .hero-copy .btn { font-size: 0.88rem; padding: 0.68rem 1.25rem; }
+  .hero-note { font-size: 0.74rem; }
   .hero-photo { min-height: 540px; }
+  .hero-photo::before {
+    background: linear-gradient(180deg, rgba(27, 43, 48, 0.7) 0%, rgba(27, 43, 48, 0.42) 55%, rgba(27, 43, 48, 0.14) 100%);
+  }
   .site-nav {
     display: none; position: absolute; top: 100%; left: 0; right: 0;
     background: var(--cream); border-bottom: 1px solid var(--line);
