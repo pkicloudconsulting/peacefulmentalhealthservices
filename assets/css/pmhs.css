@@ -223,6 +223,8 @@ img, svg { max-width: 100%; display: block; }
 }
 .section-teal .eyebrow { color: var(--sage); }
 .section-head p { color: var(--ink-soft); margin-top: 0.8rem; }
+/* keep intro copy readable on the dark teal band (this rule must follow .section-head p) */
+.section-teal .section-head p { color: #d7e8e3; }
 
 /* ---------- Cards ---------- */
 
