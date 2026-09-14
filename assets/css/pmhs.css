@@ -67,7 +67,7 @@ img, svg { max-width: 100%; display: block; }
 
 .crisis-bar {
   background: var(--teal-dark);
-  color: #eaf4f1;
+  color: #ffffff;
   font-size: 0.85rem;
   text-align: center;
   padding: 0.45rem 1rem;
@@ -201,9 +201,9 @@ img, svg { max-width: 100%; display: block; }
 .hero-photo .hero-eyebrow { background: rgba(253, 251, 247, 0.16); color: #fff; backdrop-filter: blur(4px); }
 .hero-photo h1 { color: #fff; }
 .hero-copy .lede-strong { font-weight: 800; color: #fff; margin-bottom: 0.6rem; }
-.hero-copy p.lede { margin-top: 1.1rem; margin-bottom: 0; color: #e8f0ed; }
+.hero-copy p.lede { margin-top: 1.1rem; margin-bottom: 0; color: #ffffff; }
 .hero-copy .hero-ctas { margin-top: 1.8rem; }
-.hero-photo .hero-note { color: #d3e2dd; }
+.hero-photo .hero-note { color: #ffffff; }
 .hero-photo .btn-ghost { border-color: #fff; color: #fff; text-shadow: none; }
 .hero-photo .btn-ghost:hover { background: rgba(255, 255, 255, 0.18); }
 .hero-photo .hero-wave { margin-top: auto; }
@@ -223,7 +223,7 @@ img, svg { max-width: 100%; display: block; }
 .section-sand { background: var(--sand); }
 .section-teal { background: linear-gradient(160deg, var(--teal-dark), var(--teal)); color: #eaf4f1; }
 .section-teal h2, .section-teal h3 { color: #fff; }
-.section-teal p { color: #d7e8e3; }
+.section-teal p { color: #ffffff; }
 
 .section-head { max-width: 720px; margin-bottom: 2.6rem; }
 .section-head.center { margin-inline: auto; text-align: center; }
@@ -235,7 +235,7 @@ img, svg { max-width: 100%; display: block; }
 .section-teal .eyebrow { color: var(--sage); }
 .section-head p { color: var(--ink-soft); margin-top: 0.8rem; }
 /* keep intro copy readable on the dark teal band (this rule must follow .section-head p) */
-.section-teal .section-head p { color: #d7e8e3; }
+.section-teal .section-head p { color: #ffffff; }
 
 /* ---------- Cards ---------- */
 
@@ -375,7 +375,7 @@ a.card:hover .card-link { text-decoration: underline; text-underline-offset: 3px
   box-shadow: var(--shadow);
 }
 .cta-band h2 { color: #fff; margin-bottom: 0.7rem; }
-.cta-band p { color: #f0f6f4; margin: 0 auto 1.6rem; }
+.cta-band p { color: #ffffff; margin: 0 auto 1.6rem; }
 
 /* ---------- Detail pages ---------- */
 
