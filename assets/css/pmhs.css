@@ -174,16 +174,27 @@ img, svg { max-width: 100%; display: block; }
    so the photo stays clearly visible. */
 .hero-photo {
   position: relative;
-  background: url("../img/hero-telehealth-1.jpeg") center / cover no-repeat;
+  background: var(--teal-dark);
   aspect-ratio: 1570 / 1002;
   min-height: 560px;
   display: flex; flex-direction: column;
 }
+/* rotating hero slides: stacked cover layers crossfading under the veil */
+.hero-slides { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+.hero-slide {
+  position: absolute; inset: 0; opacity: 0;
+  background-position: center; background-size: cover; background-repeat: no-repeat;
+  transition: opacity 1.2s ease;
+}
+.hero-slide.is-active { opacity: 1; }
+.hero-slide--telehealth { background-image: url("../img/hero-telehealth-1.jpeg"); }
+.hero-slide--office { background-image: url("../img/hero-office-1.jpeg"); }
+.hero-slide--family { background-image: url("../img/hero-family-1.jpeg"); }
 .hero-photo::before {
-  content: ""; position: absolute; inset: 0;
+  content: ""; position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(100deg, rgba(27, 43, 48, 0.68) 0%, rgba(27, 43, 48, 0.44) 45%, rgba(27, 43, 48, 0.16) 72%, rgba(27, 43, 48, 0.10) 100%);
 }
-.hero-photo .container, .hero-photo .hero-wave { position: relative; }
+.hero-photo .container, .hero-photo .hero-wave { position: relative; z-index: 2; }
 .hero-copy { max-width: 620px; text-shadow: 0 1px 14px rgba(27, 43, 48, 0.35); }
 .hero-photo .hero-eyebrow { background: rgba(253, 251, 247, 0.16); color: #fff; backdrop-filter: blur(4px); }
 .hero-photo h1 { color: #fff; }
@@ -197,10 +208,8 @@ img, svg { max-width: 100%; display: block; }
 @media (max-width: 900px) {
   /* keep the subject (face + laptop) in frame on narrow screens, like the reference site:
      cover-crop anchored at 55% x, taller hero, and a top-heavy veil so the lower image shows */
-  .hero-photo {
-    aspect-ratio: auto; min-height: 580px; padding-bottom: 0.5rem;
-    background-position: 55% center;
-  }
+  .hero-photo { aspect-ratio: auto; min-height: 580px; padding-bottom: 0.5rem; }
+  .hero-slide--telehealth { background-position: 55% center; }
   .hero-photo::before {
     background: linear-gradient(180deg, rgba(27, 43, 48, 0.74) 0%, rgba(27, 43, 48, 0.5) 55%, rgba(27, 43, 48, 0.2) 100%);
   }
