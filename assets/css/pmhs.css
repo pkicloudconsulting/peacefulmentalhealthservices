@@ -23,6 +23,8 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+:root { color-scheme: only light; }
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -373,7 +375,7 @@ a.card:hover .card-link { text-decoration: underline; text-underline-offset: 3px
   box-shadow: var(--shadow);
 }
 .cta-band h2 { color: #fff; margin-bottom: 0.7rem; }
-.cta-band p { color: #d7e8e3; margin: 0 auto 1.6rem; }
+.cta-band p { color: #f0f6f4; margin: 0 auto 1.6rem; }
 
 /* ---------- Detail pages ---------- */
 
