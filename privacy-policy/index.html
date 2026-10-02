@@ -5,18 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy | Peaceful Mental Health Services</title>
 <meta name="description" content="How Peaceful Mental Health Services handles information collected on this website.">
+<link rel="canonical" href="https://pkicloudconsulting.github.io/peacefulmentalhealthservices/privacy-policy/">
+<meta property="og:url" content="https://pkicloudconsulting.github.io/peacefulmentalhealthservices/privacy-policy/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32">
 <link rel="icon" href="../assets/img/favicon-192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <meta name="color-scheme" content="light">
-<link rel="stylesheet" href="../assets/css/pmhs.css?ver=pmhs-17">
+<link rel="stylesheet" href="../assets/css/pmhs.css?ver=pmhs-31">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
 
+<div class="announce-bar" role="region" aria-label="Announcement">
+  <p>Now accepting new patients for telehealth across Virginia and Washington State</p>
+  <button type="button" class="announce-close" aria-label="Dismiss announcement">&times;</button>
+</div>
 <div class="crisis-bar">If you or someone you love is in crisis, call or text <a href="tel:988">988</a>, the Suicide and Crisis Lifeline, available 24/7.</div>
 
 <header class="site-header">
@@ -27,27 +33,55 @@
       </span>
       <span class="brand-name">Peaceful<small>Mental Health Services</small></span>
     </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu" onclick="const n=document.getElementById('nav');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
-      <svg class="nav-toggle__bars" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></svg>
-      <svg class="nav-toggle__close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    <a class="btn btn-primary header-cta" href="../contact/">Request Appointment</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span class="nav-burger" aria-hidden="true"><span></span><span></span></span>
     </button>
     <nav class="site-nav" id="nav" aria-label="Main navigation">
-      <a href="../" >Home</a>
-      <div class="nav-item"><a href="../services/">Services <span class="nav-caret" aria-hidden="true">&#9660;</span></a>
+      <a href="../">Home</a>
+      <div class="nav-item nav-mega"><a href="../services/">Get Care <span class="nav-caret" aria-hidden="true">&#9660;</span></a>
         <div class="nav-drop">
-          <a href="../services/#adult">Adult Psychiatric Services</a>
-          <a href="../services/#child">Child Psychiatry Services</a>
-          <a href="../services/#psychotherapy">Psychotherapy</a>
-          <a href="../services/#medication">Medication Management</a>
-          <a href="../services/#evaluations">Diagnostic Evaluations</a>
-          <a href="../services/#telehealth">Telehealth Services</a>
-          <a href="../services/#genesight">GeneSight Testing</a>
-          <a href="../services/#oncology">Oncology Psychotherapy</a>
-          <a href="../services/#bariatric">Bariatric Surgery Psychological Evaluation</a>
+          <div class="mega-col">
+            <a class="mega-title" href="../services/">Services</a>
+            <div class="mega-links">
+              <a href="../services/#adult">Adult Psychiatric Services</a>
+              <a href="../services/#psychotherapy">Psychotherapy</a>
+              <a href="../services/#medication">Medication Management</a>
+              <a href="../services/#evaluations">Diagnostic Evaluations</a>
+              <a href="../services/#telehealth">Telehealth Services</a>
+              <a href="../services/#genesight">GeneSight Testing</a>
+              <a href="../services/#oncology">Oncology Psychotherapy</a>
+            </div>
+          </div>
+          <div class="mega-col">
+            <a class="mega-title" href="../conditions/">Conditions We Treat</a>
+            <div class="mega-links mega-links--two">
+              <a href="../conditions/#depression">Depression</a>
+              <a href="../conditions/#anxiety">Anxiety and Panic</a>
+              <a href="../conditions/#bipolar">Bipolar and Mood Disorders</a>
+              <a href="../conditions/#adhd">ADHD</a>
+              <a href="../conditions/#ocd">OCD</a>
+              <a href="../conditions/#ptsd">PTSD and Trauma</a>
+              <a href="../conditions/#sleep">Sleep and Insomnia</a>
+              <a href="../conditions/#perinatal">Postpartum and Perinatal</a>
+              <a href="../conditions/#pmdd">PMDD</a>
+              <a href="../conditions/#psychotic">Schizophrenia Spectrum</a>
+              <a href="../conditions/#eating">Eating Disorders</a>
+              <a href="../conditions/#grief">Grief and Life Transitions</a>
+            </div>
+          </div>
+          <div class="mega-col">
+            <a class="mega-title" href="../faq/">What to Expect</a>
+            <div class="mega-links">
+              <a href="../services/#telehealth">Online Telehealth Visits</a>
+              <a href="../insurance/">Insurance</a>
+              <a href="../faq/">FAQ</a>
+              <a href="../contact/">Request an Appointment</a>
+            </div>
+          </div>
         </div>
       </div>
-      <a href="../conditions/" >Conditions We Treat</a>
-      <a href="../about/" >About</a>
+      <a href="../about/">About</a>
       <div class="nav-item"><a href="../insurance/">New Patients <span class="nav-caret" aria-hidden="true">&#9660;</span></a>
         <div class="nav-drop">
           <a href="../insurance/">Insurance</a>
@@ -77,7 +111,7 @@
       <h2>How we use it</h2>
       <p>Contact information is used solely to respond to your inquiry and schedule care. We do not sell, rent, or share your information with third parties for marketing.</p>
       <h2>Patient health information</h2>
-      <p>Clinical records for patients of the practice are protected health information and are handled in accordance with HIPAA and applicable Virginia law. This website is not a patient portal and should not be used to transmit medical records.</p>
+      <p>Clinical records for patients of the practice are protected health information and are handled in accordance with HIPAA and applicable Virginia and Washington State law. This website is not a patient portal and should not be used to transmit medical records.</p>
       <h2>Cookies and analytics</h2>
       <p>This site does not use advertising cookies. Basic, anonymous usage statistics may be collected to help us improve the site.</p>
       <h2>Questions</h2>
@@ -94,11 +128,11 @@
         <span class="brand-mark brand-mark--logo" aria-hidden="true">
           <img src="../assets/img/logo-mark.png" alt="" width="42" height="42">
         </span>
-        <span class="brand-name" style="color:#fff;">Peaceful<small style="color:#8fb6aa;">Mental Health Services</small></span>
+        <span class="brand-name" style="color:#fff;">Peaceful<small style="color:#c9b6e4;">Mental Health Services</small></span>
       </a>
-      <p>Compassionate, holistic mental health care for children, adolescents, and adults, offered in person and through secure telehealth across Virginia.</p>
+      <p>Compassionate, holistic mental health care for adults, offered online through secure telehealth across Virginia and Washington State.</p>
       <ul class="footer-contact">
-        <li><a href="tel:+12403441402">+1 (240) 344-1402</a></li>
+        <li><a href="tel:+18044659225">+1 (804) 465-9225</a></li>
         <li><a href="mailto:office@peacefulmentalhealthservices.com">office@peacefulmentalhealthservices.com</a></li>
       </ul>
     </div>
@@ -118,7 +152,6 @@
       <h3>Services</h3>
       <ul>
         <li><a href="../services/#adult">Adult Psychiatric Services</a></li>
-        <li><a href="../services/#child">Child Psychiatry Services</a></li>
         <li><a href="../services/#psychotherapy">Psychotherapy</a></li>
         <li><a href="../services/#medication">Medication Management</a></li>
         <li><a href="../services/#telehealth">Telehealth Services</a></li>
@@ -139,7 +172,7 @@
 </footer>
 
 <!-- ===== Peaceful assistant chatbot ===== -->
-<link rel="stylesheet" href="../assets/chatbot/pmhs-chatbot.css?ver=pmhs-1">
+<link rel="stylesheet" href="../assets/chatbot/pmhs-chatbot.css?ver=pmhs-7">
 <div id="pm-chat" data-base="../" aria-live="polite">
   <button id="pm-chat-toggle" aria-label="Open help chat" aria-expanded="false">
     <span class="pm-chat-toggle__ring" aria-hidden="true"></span>
@@ -170,5 +203,6 @@
 </div>
 <script src="../assets/chatbot/pmhs-chatbot.js?ver=pmhs-3" defer></script>
 
+<script src="../assets/js/nav.js?ver=pmhs-1" defer></script>
 </body>
 </html>

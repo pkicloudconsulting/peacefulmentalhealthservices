@@ -5,9 +5,9 @@
   /* ---------------- Knowledge base ---------------- */
 
   var TOPICS = {
-    services:  { label: "\ud83c\udf3f Our services",          intro: "We offer comprehensive psychiatric care for children, adolescents, and adults. What would you like to know?" },
+    services:  { label: "\ud83c\udf3f Our services",          intro: "We offer comprehensive psychiatric care for adults. What would you like to know?" },
     visits:    { label: "\ud83d\udcc5 Appointments",          intro: "Happy to help you get seen. Here is what people usually ask about appointments:" },
-    telehealth:{ label: "\ud83d\udcbb Telehealth",            intro: "Our secure telehealth brings care to you anywhere in Virginia. What can I tell you?" },
+    telehealth:{ label: "\ud83d\udcbb Telehealth",            intro: "Our secure telehealth brings care to you anywhere in Virginia and Washington State. What can I tell you?" },
     billing:   { label: "\ud83d\udcb3 Insurance & payment",   intro: "Let us sort out the money side. Here is what I can help with:" },
     contact:   { label: "\ud83d\udccd Contact & crisis info", intro: "Here is how to reach us, and what to do in a crisis:" }
   };
@@ -17,22 +17,15 @@
       id: "services-overview", topic: "services",
       chip: "What services do you offer?",
       q: "What services does Peaceful Mental Health Services offer?",
-      a: "We provide holistic psychiatric care for every stage of life:\n\n\u2022 Adult psychiatric services\n\u2022 Child psychiatry services\n\u2022 Psychotherapy\n\u2022 Medication management\n\u2022 Diagnostic evaluations\n\u2022 Telehealth services\n\u2022 GeneSight testing\n\u2022 Oncology psychotherapy\n\u2022 Bariatric surgery psychological evaluations\n\nFull details on [Our Services](services/).",
+      a: "We provide holistic online psychiatric care for adults:\n\n\u2022 Adult psychiatric services\n\u2022 Psychotherapy\n\u2022 Medication management\n\u2022 Diagnostic evaluations\n\u2022 Telehealth services\n\u2022 GeneSight testing\n\u2022 Oncology psychotherapy\n\nFull details on [Our Services](services/).",
       kw: ["services", "offer", "provide", "what do you do", "everything", "list", "treatment"]
     },
     {
       id: "conditions", topic: "services",
       chip: "What conditions do you treat?",
       q: "What conditions do you treat?",
-      a: "We treat a full range of mental health conditions, including depression, anxiety and panic, ADHD, bipolar and mood disorders, PTSD and trauma, OCD, sleep problems, postpartum and PMDD, eating disorders, and substance use with co-occurring conditions. See the full list on [Conditions We Treat](conditions/).",
-      kw: ["condition", "depression", "anxiety", "adhd", "bipolar", "ptsd", "trauma", "ocd", "insomnia", "postpartum", "pmdd", "eating", "substance", "diagnos", "treat"]
-    },
-    {
-      id: "children", topic: "services",
-      chip: "Do you see children and teens?",
-      q: "Do you see children and teens?",
-      a: "Yes. We provide child and adolescent psychiatric care, always in partnership with parents and caregivers. A caregiver participates in the first appointment. More on [Our Services](services/#child).",
-      kw: ["child", "children", "teen", "kid", "adolescent", "son", "daughter", "minor", "youth"]
+      a: "We treat a full range of mental health conditions, including depression, anxiety and panic, ADHD, bipolar and mood disorders, PTSD and trauma, OCD, sleep problems, postpartum and PMDD, and eating disorders. See the full list on [Conditions We Treat](conditions/).",
+      kw: ["condition", "depression", "anxiety", "adhd", "bipolar", "ptsd", "trauma", "ocd", "insomnia", "postpartum", "pmdd", "eating", "diagnos", "treat"]
     },
     {
       id: "therapy", topic: "services",
@@ -52,7 +45,7 @@
       id: "new-patients", topic: "visits",
       chip: "Are you taking new patients?",
       q: "Are you accepting new patients?",
-      a: "Yes! We are welcoming new patients of all ages across Virginia, and most new patients are seen within one to two weeks. You can [request an appointment](contact/) in a few minutes.",
+      a: "Yes! We are welcoming adult patients across Virginia and Washington State, and most new patients are seen within one to two weeks. You can [request an appointment](contact/) in a few minutes.",
       kw: ["new patient", "accepting", "taking", "availability", "waitlist", "how soon", "openings"]
     },
     {
@@ -87,8 +80,8 @@
       id: "telehealth-where", topic: "telehealth",
       chip: "Where do you see patients?",
       q: "Where are you located and who can you see?",
-      a: "We see patients across all of Virginia through secure telehealth, so your appointment happens wherever you are comfortable. In-person visit options are also available; ask us when you book.",
-      kw: ["where", "located", "location", "area", "virginia", "in person", "in-person", "office", "address", "near me"]
+      a: "All visits are online through secure telehealth. We see adult patients located in Virginia and Washington State at the time of the appointment.",
+      kw: ["where", "located", "location", "area", "virginia", "washington", "state", "in person", "in-person", "office", "address", "near me"]
     },
     {
       id: "telehealth-rx", topic: "telehealth",

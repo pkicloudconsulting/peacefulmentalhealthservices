@@ -4,19 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Request an Appointment | Peaceful Mental Health Services</title>
-<meta name="description" content="Contact Peaceful Mental Health Services to request an appointment. New patients welcome, telehealth across Virginia.">
+<meta name="description" content="Contact Peaceful Mental Health Services to request an appointment. New adult patients welcome, online telehealth across Virginia and Washington State.">
+<link rel="canonical" href="https://pkicloudconsulting.github.io/peacefulmentalhealthservices/contact/">
+<meta property="og:url" content="https://pkicloudconsulting.github.io/peacefulmentalhealthservices/contact/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32">
 <link rel="icon" href="../assets/img/favicon-192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <meta name="color-scheme" content="light">
-<link rel="stylesheet" href="../assets/css/pmhs.css?ver=pmhs-17">
+<link rel="stylesheet" href="../assets/css/pmhs.css?ver=pmhs-31">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
 
+<div class="announce-bar" role="region" aria-label="Announcement">
+  <p>Now accepting new patients for telehealth across Virginia and Washington State</p>
+  <button type="button" class="announce-close" aria-label="Dismiss announcement">&times;</button>
+</div>
 <div class="crisis-bar">If you or someone you love is in crisis, call or text <a href="tel:988">988</a>, the Suicide and Crisis Lifeline, available 24/7.</div>
 
 <header class="site-header">
@@ -27,27 +33,55 @@
       </span>
       <span class="brand-name">Peaceful<small>Mental Health Services</small></span>
     </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu" onclick="const n=document.getElementById('nav');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
-      <svg class="nav-toggle__bars" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></svg>
-      <svg class="nav-toggle__close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    <a class="btn btn-primary header-cta" href="../contact/">Request Appointment</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span class="nav-burger" aria-hidden="true"><span></span><span></span></span>
     </button>
     <nav class="site-nav" id="nav" aria-label="Main navigation">
-      <a href="../" >Home</a>
-      <div class="nav-item"><a href="../services/">Services <span class="nav-caret" aria-hidden="true">&#9660;</span></a>
+      <a href="../">Home</a>
+      <div class="nav-item nav-mega"><a href="../services/">Get Care <span class="nav-caret" aria-hidden="true">&#9660;</span></a>
         <div class="nav-drop">
-          <a href="../services/#adult">Adult Psychiatric Services</a>
-          <a href="../services/#child">Child Psychiatry Services</a>
-          <a href="../services/#psychotherapy">Psychotherapy</a>
-          <a href="../services/#medication">Medication Management</a>
-          <a href="../services/#evaluations">Diagnostic Evaluations</a>
-          <a href="../services/#telehealth">Telehealth Services</a>
-          <a href="../services/#genesight">GeneSight Testing</a>
-          <a href="../services/#oncology">Oncology Psychotherapy</a>
-          <a href="../services/#bariatric">Bariatric Surgery Psychological Evaluation</a>
+          <div class="mega-col">
+            <a class="mega-title" href="../services/">Services</a>
+            <div class="mega-links">
+              <a href="../services/#adult">Adult Psychiatric Services</a>
+              <a href="../services/#psychotherapy">Psychotherapy</a>
+              <a href="../services/#medication">Medication Management</a>
+              <a href="../services/#evaluations">Diagnostic Evaluations</a>
+              <a href="../services/#telehealth">Telehealth Services</a>
+              <a href="../services/#genesight">GeneSight Testing</a>
+              <a href="../services/#oncology">Oncology Psychotherapy</a>
+            </div>
+          </div>
+          <div class="mega-col">
+            <a class="mega-title" href="../conditions/">Conditions We Treat</a>
+            <div class="mega-links mega-links--two">
+              <a href="../conditions/#depression">Depression</a>
+              <a href="../conditions/#anxiety">Anxiety and Panic</a>
+              <a href="../conditions/#bipolar">Bipolar and Mood Disorders</a>
+              <a href="../conditions/#adhd">ADHD</a>
+              <a href="../conditions/#ocd">OCD</a>
+              <a href="../conditions/#ptsd">PTSD and Trauma</a>
+              <a href="../conditions/#sleep">Sleep and Insomnia</a>
+              <a href="../conditions/#perinatal">Postpartum and Perinatal</a>
+              <a href="../conditions/#pmdd">PMDD</a>
+              <a href="../conditions/#psychotic">Schizophrenia Spectrum</a>
+              <a href="../conditions/#eating">Eating Disorders</a>
+              <a href="../conditions/#grief">Grief and Life Transitions</a>
+            </div>
+          </div>
+          <div class="mega-col">
+            <a class="mega-title" href="../faq/">What to Expect</a>
+            <div class="mega-links">
+              <a href="../services/#telehealth">Online Telehealth Visits</a>
+              <a href="../insurance/">Insurance</a>
+              <a href="../faq/">FAQ</a>
+              <a href="../contact/">Request an Appointment</a>
+            </div>
+          </div>
         </div>
       </div>
-      <a href="../conditions/" >Conditions We Treat</a>
-      <a href="../about/" >About</a>
+      <a href="../about/">About</a>
       <div class="nav-item"><a href="../insurance/">New Patients <span class="nav-caret" aria-hidden="true">&#9660;</span></a>
         <div class="nav-drop">
           <a href="../insurance/">Insurance</a>
@@ -71,36 +105,392 @@
 
   <section class="section">
     <div class="container split" style="align-items:start;">
-      <div class="form-card">
-        <!-- TODO: connect this form to a backend (Formspree, Netlify Forms, or practice EHR intake) before launch -->
-        <form method="post" action="#">
-          <div class="form-grid">
-            <div><label for="fname">First name</label><input id="fname" name="fname" autocomplete="given-name" required></div>
-            <div><label for="lname">Last name</label><input id="lname" name="lname" autocomplete="family-name" required></div>
-            <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-            <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
-            <div class="full"><label for="interest">I am interested in</label>
-              <select id="interest" name="interest">
-                <option>New patient evaluation</option>
-                <option>Medication management</option>
-                <option>Psychotherapy</option>
-                <option>Care for my child or teen</option>
-                <option>GeneSight testing</option>
-                <option>Pre-surgical evaluation</option>
-                <option>Something else</option>
-              </select>
+      <div class="care-box" data-current="1">
+        <!-- Alma-style care finder: 1 service, 2 support needs, 3 location (virtual only), 4 payment, 5 contact.
+             TODO before launch: set FORM_ENDPOINT below (Formspree, Netlify Forms, or the practice EHR intake).
+             Until then the request opens the visitor's email app, pre-filled to the office address. -->
+        <div class="care-head">
+          <button type="button" class="care-back" aria-label="Back" hidden>
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          </button>
+          <span class="care-count" aria-live="polite">Step 1 of 5</span>
+        </div>
+        <div class="care-progress" role="progressbar" aria-label="Questions answered" aria-valuemin="0" aria-valuemax="5" aria-valuenow="1"><span></span></div>
+
+        <form class="care-form" novalidate>
+          <input type="hidden" name="service" class="care-f-service">
+          <input type="hidden" name="support" class="care-f-support">
+          <input type="hidden" name="location" class="care-f-location">
+          <input type="hidden" name="payment" class="care-f-payment">
+
+          <!-- 1. Service -->
+          <section class="care-step" data-step="1" aria-labelledby="care-q1">
+            <h2 class="care-q" id="care-q1"><span>1.</span> What are you looking for today?</h2>
+            <div class="care-options" role="radiogroup" aria-labelledby="care-q1">
+              <button type="button" class="care-option" role="radio" aria-checked="false" data-value="Adult psychiatric care">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3.2"/><path d="M5 20c.8-3.8 3.6-6 7-6s6.2 2.2 7 6"/></svg>
+                <span>Adult psychiatric care</span>
+              </button>
+              <button type="button" class="care-option" role="radio" aria-checked="false" data-value="Psychotherapy">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h11a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9l-4 3v-3H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M19 9h1a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v2l-3-2"/></svg>
+                <span>Psychotherapy</span>
+              </button>
+              <button type="button" class="care-option" role="radio" aria-checked="false" data-value="Medication management">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="7" width="12" height="14" rx="2"/><path d="M8 3h8v4H8zM9 13h6M12 10v6"/></svg>
+                <span>Medication management</span>
+              </button>
+              <button type="button" class="care-option" role="radio" aria-checked="false" data-value="Diagnostic evaluation">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 11l2 2 4-4M9 17h6"/></svg>
+                <span>Diagnostic evaluation</span>
+              </button>
+              <button type="button" class="care-option" role="radio" aria-checked="false" data-value="GeneSight testing">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3c0 6 10 6 10 12s-10 3-10 6M17 3c0 6-10 6-10 12M17 21c0-2-1.5-3.4-3.4-4.5"/><path d="M8.5 7h7M8.5 17h7"/></svg>
+                <span>GeneSight testing</span>
+              </button>
+              <button type="button" class="care-option" role="radio" aria-checked="false" data-value="Oncology psychotherapy">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/><path d="M12 9v6M9 12h6"/></svg>
+                <span>Oncology psychotherapy</span>
+              </button>
             </div>
-            <div class="full"><label for="msg">Anything you would like us to know? (optional, please do not include sensitive medical details)</label><textarea id="msg" name="msg" rows="4"></textarea></div>
-            <div class="full"><button class="btn btn-accent" type="submit" style="border:none; cursor:pointer;">Send Request</button></div>
+          </section>
+
+          <!-- 2. Support needs -->
+          <section class="care-step" data-step="2" aria-labelledby="care-q2" hidden>
+            <h2 class="care-q" id="care-q2"><span>2.</span> What would you like support with?</h2>
+            <p class="care-sub">Select all that apply. <span class="care-suggest-note" hidden>Suggestions for <strong class="care-suggest-for"></strong> are listed first.</span></p>
+            <div class="care-options care-multi" role="group" aria-labelledby="care-q2">
+              <button type="button" class="care-option" aria-pressed="false" data-value="Anxiety and panic">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 5 13h6l-1 9 8-11h-6z"/></svg>
+                <span>Anxiety and panic</span>
+              </button>
+              <button type="button" class="care-option" aria-pressed="false" data-value="Depression">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 15a4 4 0 1 1 .8-7.9A5 5 0 0 1 17.5 8 3.5 3.5 0 1 1 17 15z"/><path d="M8 19l-1 2M12 19l-1 2M16 19l-1 2"/></svg>
+                <span>Depression</span>
+              </button>
+              <button type="button" class="care-option" aria-pressed="false" data-value="ADHD">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>
+                <span>ADHD</span>
+              </button>
+              <button type="button" class="care-option" aria-pressed="false" data-value="Bipolar and mood">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12c2.5-6 5-6 7.5 0s5 6 7.5 0 3.5-4 5-2"/></svg>
+                <span>Bipolar and mood</span>
+              </button>
+              <button type="button" class="care-option" aria-pressed="false" data-value="Trauma and PTSD">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+                <span>Trauma and PTSD</span>
+              </button>
+              <button type="button" class="care-option" aria-pressed="false" data-value="Sleep and insomnia">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+                <span>Sleep and insomnia</span>
+              </button>
+              <button type="button" class="care-option" aria-pressed="false" data-value="Grief and life transitions">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19C5 10 11 5 20 4c-1 9-6 15-15 15z"/><path d="M5 19l8-8"/></svg>
+                <span>Grief and life transitions</span>
+              </button>
+              <button type="button" class="care-option care-unsure" aria-pressed="false" data-value="I'm not sure yet">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.6 2.6 0 1 1 3.6 2.4c-.7.3-1.1.9-1.1 1.6v.5M12 17h.01"/></svg>
+                <span>I'm not sure yet</span>
+              </button>
+              <button type="button" class="care-option care-more-item" aria-pressed="false" data-value="Obsessive-compulsive disorder" hidden><span>OCD</span></button>
+              <button type="button" class="care-option care-more-item" aria-pressed="false" data-value="Postpartum and perinatal mood" hidden><span>Postpartum and perinatal mood</span></button>
+              <button type="button" class="care-option care-more-item" aria-pressed="false" data-value="PMDD and severe PMS" hidden><span>PMDD and severe PMS</span></button>
+              <button type="button" class="care-option care-more-item" aria-pressed="false" data-value="Eating disorders" hidden><span>Eating disorders</span></button>
+              <button type="button" class="care-option care-more-item" aria-pressed="false" data-value="Schizophrenia spectrum" hidden><span>Schizophrenia spectrum</span></button>
+              <button type="button" class="care-option care-more-item" aria-pressed="false" data-value="Stress and burnout" hidden><span>Stress and burnout</span></button>
+            </div>
+            <button type="button" class="care-more" aria-expanded="false">View more options
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="care-other" hidden>
+              <label for="care-other">Something else? Tell us in a few words</label>
+              <input id="care-other" name="support_other" maxlength="120" placeholder="For example: focus at work, anger, loneliness">
+            </div>
+          </section>
+
+          <!-- 3. Location, virtual only -->
+          <section class="care-step" data-step="3" aria-labelledby="care-q3" hidden>
+            <h2 class="care-q" id="care-q3"><span>3.</span> Where are you located?</h2>
+            <p class="care-sub">We will match you with a clinician licensed where you are. We currently see adults in Virginia and Washington State.</p>
+            <label for="care-loc" class="care-visually-hidden">Your state or ZIP code</label>
+            <div class="care-loc-wrap">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg>
+              <input id="care-loc" list="care-states" autocomplete="postal-code" placeholder="Your state or ZIP code" aria-describedby="care-loc-msg">
+              <datalist id="care-states"><option value="Virginia"></option><option value="Washington State"></option></datalist>
+            </div>
+            <div class="care-quick" role="group" aria-label="Choose your state">
+              <button type="button" class="care-chip" data-state="Virginia">Virginia</button>
+              <button type="button" class="care-chip" data-state="Washington State">Washington State</button>
+            </div>
+            <p class="care-loc-msg" id="care-loc-msg" aria-live="polite"></p>
+            <h3 class="care-q2">How will you meet with your provider?</h3>
+            <div class="care-virtual" role="radiogroup" aria-label="How you will meet with your provider">
+              <label class="care-radio is-selected">
+                <input type="radio" name="visit_type" value="Virtual" checked>
+                <span><strong>Virtually, by secure video</strong><small>Every visit is online, so you can join from home, work, or anywhere in Virginia or Washington State.</small></span>
+              </label>
+            </div>
+          </section>
+
+          <!-- 4. Payment -->
+          <section class="care-step" data-step="4" aria-labelledby="care-q4" hidden>
+            <h2 class="care-q" id="care-q4"><span>4.</span> How would you like to pay?</h2>
+            <p class="care-sub">We accept most insurance plans, including commercial plans, Medicare, and Medicaid.</p>
+            <div class="care-list" role="radiogroup" aria-labelledby="care-q4">
+              <button type="button" class="care-row" role="radio" aria-checked="false" data-value="Insurance">Insurance</button>
+              <button type="button" class="care-row" role="radio" aria-checked="false" data-value="Self-pay">Self-pay</button>
+              <button type="button" class="care-row" role="radio" aria-checked="false" data-value="I'm not sure yet">I'm not sure yet</button>
+            </div>
+            <div class="care-plan" hidden>
+              <label for="care-plan">Your insurance plan</label>
+              <select id="care-plan" name="insurance_plan">
+                <option value="">Choose your plan</option>
+                <option>Aetna</option><option>Aetna Better Health of Virginia</option><option>Allegiance Benefit Plan Management</option>
+                <option>American Plan Administrators</option><option>Anthem BCBS</option><option>Anthem HealthKeepers</option>
+                <option>Cigna</option><option>Direct Health</option><option>GEHA</option><option>Medicaid of Virginia</option>
+                <option>Medicare</option><option>Optum</option><option>Optum Behavioral Health</option><option>Railroad Medicare</option>
+                <option>UHC</option><option>UHC Community Plan</option><option>UMR</option><option>VACCN</option>
+                <option>My plan is not listed</option>
+              </select>
+              <p class="care-hint">Not sure about coverage? We will verify your benefits before your first visit.</p>
+            </div>
+          </section>
+
+          <!-- 5. Contact -->
+          <section class="care-step" data-step="5" aria-labelledby="care-q5" hidden>
+            <h2 class="care-q" id="care-q5"><span>5.</span> Almost done. How can we reach you?</h2>
+            <ul class="care-summary" aria-label="Your answers"></ul>
+            <div class="form-grid">
+              <div><label for="fname">First name</label><input id="fname" name="fname" autocomplete="given-name" required></div>
+              <div><label for="lname">Last name</label><input id="lname" name="lname" autocomplete="family-name" required></div>
+              <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+              <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+              <div class="full"><label for="msg">Anything else you would like us to know? (optional, please do not include sensitive medical details)</label><textarea id="msg" name="msg" rows="3"></textarea></div>
+            </div>
+            <p class="care-error" aria-live="polite"></p>
+          </section>
+
+          <section class="care-step care-done" data-step="6" hidden tabindex="-1">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.6 2.6L16 9.6"/></svg>
+            <h2 class="care-q">Thank you. Your request is ready.</h2>
+            <p class="care-done-text"></p>
+            <p class="care-hint">Prefer to talk? Call us at <a href="tel:+18044659225">+1 (804) 465-9225</a>, Monday to Friday, 9:00 am to 5:00 pm.</p>
+          </section>
+
+          <div class="care-foot">
+            <button type="button" class="btn btn-primary care-next" disabled>Continue</button>
           </div>
         </form>
       </div>
+      <script>
+      (function () {
+        var FORM_ENDPOINT = ""; // e.g. "https://formspree.io/f/xxxx" once the practice sets one up
+        var OFFICE_EMAIL = "office@peacefulmentalhealthservices.com";
+        var box = document.querySelector(".care-box"); if (!box) return;
+        var form = box.querySelector(".care-form");
+        var steps = [].slice.call(box.querySelectorAll(".care-step"));
+        var nextBtn = box.querySelector(".care-next");
+        var backBtn = box.querySelector(".care-back");
+        var count = box.querySelector(".care-count");
+        var bar = box.querySelector(".care-progress");
+        var TOTAL = 5, step = 1;
+        var ans = { service: "", support: [], location: "", payment: "", plan: "" };
+        function $(s) { return box.querySelector(s); }
+
+        // suggestions per service: these conditions move to the front of step 2
+        var SUGGEST = {
+          "Adult psychiatric care": ["Depression", "Anxiety and panic", "Bipolar and mood"],
+          "Psychotherapy": ["Anxiety and panic", "Grief and life transitions", "Trauma and PTSD"],
+          "Medication management": ["Depression", "ADHD", "Anxiety and panic"],
+          "Diagnostic evaluation": ["ADHD", "Bipolar and mood", "I'm not sure yet"],
+          "GeneSight testing": ["Depression", "Anxiety and panic", "ADHD"],
+          "Oncology psychotherapy": ["Anxiety and panic", "Depression", "Grief and life transitions"]
+        };
+
+        function valid() {
+          if (step === 1) return !!ans.service;
+          if (step === 2) return ans.support.length > 0 || !!$("#care-other").value.trim();
+          if (step === 3) return !!ans.location;
+          if (step === 4) return !!ans.payment && (ans.payment !== "Insurance" || !!$("#care-plan").value);
+          return true;
+        }
+        function refresh() { nextBtn.disabled = !valid(); }
+
+        function show(n, initial) {
+          step = n;
+          steps.forEach(function (s) { s.hidden = Number(s.getAttribute("data-step")) !== n; });
+          box.setAttribute("data-current", n);
+          var done = n > TOTAL;
+          backBtn.hidden = n === 1 || done;
+          count.textContent = done ? "All set" : "Step " + n + " of " + TOTAL;
+          bar.setAttribute("aria-valuenow", Math.min(n, TOTAL));
+          bar.firstElementChild.style.width = (done ? 100 : (n - 1) / TOTAL * 100 + 6) + "%";
+          box.querySelector(".care-foot").hidden = n === 1 || done;
+          nextBtn.textContent = n === TOTAL ? "Request my consultation" : "Continue";
+          if (n === 2) orderSuggestions();
+          if (n === TOTAL) summary();
+          refresh();
+          var h = steps[n - 1] && steps[n - 1].querySelector(".care-q");
+          if (h && !initial) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
+          var top = box.getBoundingClientRect().top;
+          if (!initial && top < 0) window.scrollBy({ top: top - 90, behavior: "smooth" });
+        }
+
+        // 1. service: single choice, moves on by itself like Alma
+        [].forEach.call(box.querySelectorAll('.care-step[data-step="1"] .care-option'), function (o, i, all) {
+          o.addEventListener("click", function () {
+            [].forEach.call(all, function (x) { x.setAttribute("aria-checked", x === o); x.classList.toggle("is-selected", x === o); });
+            ans.service = o.getAttribute("data-value");
+            setTimeout(function () { show(2); }, 220);
+          });
+        });
+
+        // 2. support: multi choice, "I'm not sure yet" clears the rest
+        var multi = [].slice.call(box.querySelectorAll(".care-multi .care-option"));
+        function syncSupport() {
+          ans.support = multi.filter(function (x) { return x.classList.contains("is-selected"); }).map(function (x) { return x.getAttribute("data-value"); });
+          refresh();
+        }
+        multi.forEach(function (o) {
+          o.addEventListener("click", function () {
+            var on = !o.classList.contains("is-selected");
+            if (on && o.classList.contains("care-unsure")) multi.forEach(function (x) { x.classList.remove("is-selected"); x.setAttribute("aria-pressed", "false"); });
+            if (on && !o.classList.contains("care-unsure")) { var u = $(".care-unsure"); u.classList.remove("is-selected"); u.setAttribute("aria-pressed", "false"); }
+            o.classList.toggle("is-selected", on); o.setAttribute("aria-pressed", on);
+            syncSupport();
+          });
+        });
+        $(".care-more").addEventListener("click", function () {
+          var open = this.getAttribute("aria-expanded") !== "true";
+          this.setAttribute("aria-expanded", open);
+          this.firstChild.nodeValue = open ? "Fewer options " : "View more options ";
+          [].forEach.call(box.querySelectorAll(".care-more-item"), function (x) { x.hidden = !open && !x.classList.contains("is-selected"); });
+          $(".care-other").hidden = !open;
+        });
+        $("#care-other").addEventListener("input", refresh);
+        function orderSuggestions() {
+          var list = SUGGEST[ans.service] || [];
+          var grid = $(".care-multi");
+          multi.forEach(function (x) { x.classList.remove("is-suggested"); });
+          list.slice().reverse().forEach(function (v) {
+            var el = multi.filter(function (x) { return x.getAttribute("data-value") === v; })[0];
+            if (el) { el.classList.add("is-suggested"); grid.insertBefore(el, grid.firstChild); }
+          });
+          grid.appendChild($(".care-unsure"));
+          [].forEach.call(box.querySelectorAll(".care-more-item"), function (x) { grid.appendChild(x); });
+          $(".care-suggest-note").hidden = !list.length;
+          $(".care-suggest-for").textContent = ans.service.toLowerCase();
+        }
+
+        // 3. location: Virginia or Washington by name, abbreviation, or ZIP
+        var loc = $("#care-loc"), msg = $(".care-loc-msg");
+        function stateFrom(v) {
+          v = " " + v.trim().toLowerCase().replace(/[.,]/g, " ") + " ";
+          if (!v.trim()) return "";
+          var z = v.match(/\b(\d{5})(-\d{4})?\b/);
+          if (z) {
+            var p = Number(z[1].slice(0, 3));
+            if (p === 201 || (p >= 220 && p <= 246)) return "Virginia";
+            if (p >= 980 && p <= 994) return "Washington State";
+            return "outside";
+          }
+          if (/\swashington\s?(state)?\s|\swa\s/.test(v) && !/\sdc\s|d c/.test(v)) return "Washington State";
+          if (/\svirginia\s|\sva\s/.test(v) && !/west virginia/.test(v)) return "Virginia";
+          return "unknown";
+        }
+        function setLoc(fromChip) {
+          var s = stateFrom(loc.value), zm = loc.value.match(/\b\d{5}\b/), zip = zm ? zm[0] : "";
+          box.querySelectorAll(".care-chip").forEach(function (c) { c.classList.toggle("is-selected", c.getAttribute("data-state") === s); });
+          msg.className = "care-loc-msg";
+          if (s === "Virginia" || s === "Washington State") {
+            ans.location = s + (zip ? " (" + zip + ")" : "");
+            msg.textContent = "Great, we see patients in " + s + ". All visits are by secure video.";
+            msg.classList.add("is-ok");
+          } else {
+            ans.location = "";
+            if (s === "outside") { msg.textContent = "We are licensed in Virginia and Washington State only right now. Call us and we will gladly point you to care near you."; msg.classList.add("is-warn"); }
+            else if (s === "unknown" && !fromChip) { msg.textContent = "Enter Virginia, Washington State, or a 5-digit ZIP code."; }
+            else msg.textContent = "";
+          }
+          refresh();
+        }
+        loc.addEventListener("input", function () { setLoc(false); });
+        box.querySelectorAll(".care-chip").forEach(function (c) {
+          c.addEventListener("click", function () { loc.value = c.getAttribute("data-state"); setLoc(true); });
+        });
+
+        // 4. payment
+        var rows = [].slice.call(box.querySelectorAll(".care-row"));
+        rows.forEach(function (r) {
+          r.addEventListener("click", function () {
+            rows.forEach(function (x) { x.setAttribute("aria-checked", x === r); x.classList.toggle("is-selected", x === r); });
+            ans.payment = r.getAttribute("data-value");
+            $(".care-plan").hidden = ans.payment !== "Insurance";
+            refresh();
+          });
+        });
+        $("#care-plan").addEventListener("change", function () { ans.plan = this.value; refresh(); });
+
+        // 5. contact + summary
+        function summary() {
+          var support = ans.support.slice(); var other = $("#care-other").value.trim(); if (other) support.push(other);
+          var items = [["Looking for", ans.service], ["Support with", support.join(", ")], ["Location", ans.location + ", virtual visits"],
+                       ["Payment", ans.payment === "Insurance" ? "Insurance: " + ans.plan : ans.payment]];
+          var ul = $(".care-summary"); ul.innerHTML = "";
+          items.forEach(function (it, i) {
+            var li = document.createElement("li");
+            var b = document.createElement("button"); b.type = "button"; b.className = "care-edit"; b.textContent = "Edit";
+            b.setAttribute("aria-label", "Edit " + it[0].toLowerCase());
+            b.addEventListener("click", function () { show(i + 1); });
+            var t = document.createElement("span"); t.innerHTML = "<small></small><strong></strong>";
+            t.firstChild.textContent = it[0]; t.lastChild.textContent = it[1];
+            li.appendChild(t); li.appendChild(b); ul.appendChild(li);
+          });
+          $(".care-f-service").value = ans.service; $(".care-f-support").value = support.join(", ");
+          $(".care-f-location").value = ans.location; $(".care-f-payment").value = items[3][1];
+        }
+
+        nextBtn.addEventListener("click", function () {
+          if (!valid()) return;
+          if (step < TOTAL) { show(step + 1); return; }
+          submit();
+        });
+        backBtn.addEventListener("click", function () { if (step > 1) show(step - 1); });
+        form.addEventListener("submit", function (e) { e.preventDefault(); if (step === TOTAL) submit(); });
+
+        function submit() {
+          var err = $(".care-error"); err.textContent = "";
+          var f = $("#fname"), l = $("#lname"), em = $("#email");
+          if (!f.value.trim() || !l.value.trim()) { err.textContent = "Please add your first and last name."; (f.value.trim() ? l : f).focus(); return; }
+          if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em.value.trim())) { err.textContent = "Please add a valid email so we can reply."; em.focus(); return; }
+          summary();
+          var data = new FormData(form);
+          var done = $(".care-done-text");
+          if (FORM_ENDPOINT) {
+            nextBtn.disabled = true; nextBtn.textContent = "Sending...";
+            fetch(FORM_ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } })
+              .then(function (r) { if (!r.ok) throw new Error(r.status); done.textContent = "We received your request and will reply within one business day."; show(TOTAL + 1); })
+              .catch(function () { nextBtn.disabled = false; nextBtn.textContent = "Request my consultation"; err.textContent = "Something went wrong sending your request. Please try again or call us."; });
+            return;
+          }
+          var lines = [];
+          data.forEach(function (v, k) { if (v && k !== "visit_type") lines.push(k.replace(/_/g, " ") + ": " + v); });
+          lines.push("visit type: virtual");
+          location.href = "mailto:" + OFFICE_EMAIL + "?subject=" + encodeURIComponent("Consultation request: " + ans.service) + "&body=" + encodeURIComponent(lines.join("\n"));
+          done.textContent = "Your email app should open with your request filled in. Press send and we will reply within one business day.";
+          show(TOTAL + 1);
+        }
+
+        show(1, true);
+      })();
+      </script>
       <div class="prose">
         <h2 style="margin-top:0;">Other ways to reach us</h2>
-        <p><strong>Phone:</strong> <a href="tel:+12403441402">+1 (240) 344-1402</a><br>
+        <p><strong>Phone:</strong> <a href="tel:+18044659225">+1 (804) 465-9225</a><br>
         <strong>Email:</strong> <a href="mailto:office@peacefulmentalhealthservices.com">office@peacefulmentalhealthservices.com</a></p>
         <p><strong>Hours:</strong> Monday to Friday, 9:00 am to 5:00 pm.</p>
-        <p><strong>Location:</strong> We serve patients across Virginia through secure telehealth, so your appointment happens wherever you are comfortable.</p>
+        <p><strong>Location:</strong> We serve adult patients across Virginia and Washington State through secure online telehealth, so your appointment happens wherever you are comfortable.</p>
+        <h3>Where we serve</h3>
+        <p>Adult patients in <strong>Virginia</strong> and <strong>Washington State</strong>. All visits are online by secure video.</p>
         <h3>Insurance</h3>
         <p>We accept most insurance plans, including commercial plans, Medicare, and Medicaid. Self-pay options are available; contact us for details.</p>
         <div class="footer-crisis" style="background:var(--sand); border-color:var(--line); color:var(--ink-soft);">
@@ -119,11 +509,11 @@
         <span class="brand-mark brand-mark--logo" aria-hidden="true">
           <img src="../assets/img/logo-mark.png" alt="" width="42" height="42">
         </span>
-        <span class="brand-name" style="color:#fff;">Peaceful<small style="color:#8fb6aa;">Mental Health Services</small></span>
+        <span class="brand-name" style="color:#fff;">Peaceful<small style="color:#c9b6e4;">Mental Health Services</small></span>
       </a>
-      <p>Compassionate, holistic mental health care for children, adolescents, and adults, offered in person and through secure telehealth across Virginia.</p>
+      <p>Compassionate, holistic mental health care for adults, offered online through secure telehealth across Virginia and Washington State.</p>
       <ul class="footer-contact">
-        <li><a href="tel:+12403441402">+1 (240) 344-1402</a></li>
+        <li><a href="tel:+18044659225">+1 (804) 465-9225</a></li>
         <li><a href="mailto:office@peacefulmentalhealthservices.com">office@peacefulmentalhealthservices.com</a></li>
       </ul>
     </div>
@@ -143,7 +533,6 @@
       <h3>Services</h3>
       <ul>
         <li><a href="../services/#adult">Adult Psychiatric Services</a></li>
-        <li><a href="../services/#child">Child Psychiatry Services</a></li>
         <li><a href="../services/#psychotherapy">Psychotherapy</a></li>
         <li><a href="../services/#medication">Medication Management</a></li>
         <li><a href="../services/#telehealth">Telehealth Services</a></li>
@@ -164,7 +553,7 @@
 </footer>
 
 <!-- ===== Peaceful assistant chatbot ===== -->
-<link rel="stylesheet" href="../assets/chatbot/pmhs-chatbot.css?ver=pmhs-1">
+<link rel="stylesheet" href="../assets/chatbot/pmhs-chatbot.css?ver=pmhs-7">
 <div id="pm-chat" data-base="../" aria-live="polite">
   <button id="pm-chat-toggle" aria-label="Open help chat" aria-expanded="false">
     <span class="pm-chat-toggle__ring" aria-hidden="true"></span>
@@ -195,5 +584,6 @@
 </div>
 <script src="../assets/chatbot/pmhs-chatbot.js?ver=pmhs-3" defer></script>
 
+<script src="../assets/js/nav.js?ver=pmhs-1" defer></script>
 </body>
 </html>

@@ -22,3 +22,16 @@ Alternative subject if the client prefers a provider-focused image:
 
 Export at 1600x1200 or larger, compress to under 300 KB (webp preferred), and
 bump the CSS `?ver=` string if styles change with it.
+
+## Client concept (2026-10-02): a little bed in a tree
+
+The client pictures a small bed resting peacefully in a tree. Use this as the
+hero or approach image (generate it, never source it elsewhere).
+
+> Dreamy, serene illustration-style photograph of a small cozy bed with soft
+> linens nestled on a sturdy tree branch, gentle morning light filtering
+> through leaves, calm and safe mood, sage green and warm sand palette, soft
+> depth of field, no people, no text, no logos.
+
+Save as `assets/img/hero-tree-bed-1.jpeg` (new filename busts the cache) and add
+a `.hero-slide` for it in `index.html`, or use it in the "approach" image slot.
