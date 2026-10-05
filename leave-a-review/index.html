@@ -8,15 +8,15 @@
 <meta name="robots" content="noindex, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32">
-<link rel="icon" href="../assets/img/favicon-192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@500;600;700;800&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="../assets/img/favicon-32-v2.png" sizes="32x32">
+<link rel="icon" href="../assets/img/favicon-192-v2.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon-v2.png">
 <meta name="color-scheme" content="light">
 <style>
 :root{
-  --teal:#0b4934; --teal-dark:#06301f; --teal-tint:#e9f1ec; --sage:#b9d3c4;
-  --ink:#1f2b26; --ink-soft:#4f5b55; --cream:#ffffff; --line:#e4e8e5; --star:#ffc542;
+  --teal:#5e2b8a; --teal-dark:#3b1757; --teal-tint:#f3eafa; --sage:#d9c2f0;
+  --ink:#2b2033; --ink-soft:#5c5066; --cream:#ffffff; --line:#ece3f3; --star:#ffc542;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -27,18 +27,20 @@ body{font-family:"Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-
 .pm-rev-mark{width:44px;height:44px;flex:none;background:#fff;border-radius:50%;
   overflow:hidden;box-shadow:0 0 0 1px var(--line)}
 .pm-rev-mark img{width:100%;height:100%;object-fit:cover;display:block}
-.pm-rev-brand{font-family:"Fraunces",Georgia,serif;font-size:1.15rem;font-weight:700;color:var(--ink);line-height:1.15}
-.pm-rev-brand small{display:block;font-family:"Nunito Sans",sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.pm-rev-brand{display:inline-flex;flex-direction:column;align-items:flex-start;white-space:nowrap;font-family:"Montserrat","Segoe UI",system-ui,sans-serif;font-size:1.2rem;font-weight:800;text-transform:uppercase;line-height:1;color:var(--ink)}
+.pm-rev-brand .bn-1{display:block;font-family:"Great Vibes","Brush Script MT",cursive;font-weight:400;text-transform:none;letter-spacing:0;font-size:1.75em;line-height:.9;padding-right:.06em}
+.pm-rev-brand .bn-2{display:block;font-size:.6em;margin-top:.32em}
+.pm-rev-brand small{align-self:stretch;display:flex;justify-content:space-between;font-family:"Montserrat",sans-serif;font-size:.42em;font-weight:700;letter-spacing:0;text-transform:uppercase;color:var(--teal);margin-top:.42em}
 .pm-rev-card{width:100%;max-width:480px;background:#fff;border:1px solid var(--line);border-radius:20px;
-  box-shadow:0 18px 50px rgba(31,43,38,.12);padding:28px 24px 26px;margin-top:14px;
+  box-shadow:0 18px 50px rgba(43, 32, 51,.12);padding:28px 24px 26px;margin-top:14px;
   animation:pm-in .35s cubic-bezier(.18,.89,.32,1.18) both}
 @keyframes pm-in{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
-h1{font-family:"Fraunces",Georgia,serif;font-size:26px;line-height:1.25;margin:0 0 6px;color:var(--teal-dark)}
+h1{font-family:"Montserrat","Segoe UI",system-ui,sans-serif;font-size:26px;line-height:1.25;margin:0 0 6px;color:var(--teal-dark)}
 .pm-rev-sub{margin:0 0 22px;font-size:15px;line-height:1.5;color:var(--ink-soft)}
 label{display:block;font-weight:700;font-size:14px;color:var(--teal-dark);margin:0 0 7px}
 input[type=text],textarea{width:100%;border:1.5px solid var(--line);border-radius:14px;padding:13px 15px;font-size:16px;
   font-family:inherit;color:var(--ink);outline:none;background:var(--cream);transition:border-color .14s,box-shadow .14s}
-input[type=text]:focus,textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(11,73,52,.18);background:#fff}
+input[type=text]:focus,textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(94, 43, 138,.18);background:#fff}
 textarea{min-height:130px;resize:vertical;line-height:1.5}
 .pm-field{margin-bottom:20px}
 /* ----- Stars ----- */
@@ -58,8 +60,8 @@ textarea{min-height:130px;resize:vertical;line-height:1.5}
 button.pm-submit{width:100%;border:0;cursor:pointer;margin-top:4px;
   background:linear-gradient(135deg,var(--teal) 0%,var(--teal-dark) 100%);color:#fff;
   font-family:inherit;font-weight:800;font-size:17px;letter-spacing:.2px;padding:15px 20px;border-radius:999px;
-  box-shadow:0 10px 28px rgba(6,48,31,.35);transition:transform .15s,box-shadow .15s,opacity .15s}
-button.pm-submit:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(6,48,31,.45)}
+  box-shadow:0 10px 28px rgba(59, 23, 87,.35);transition:transform .15s,box-shadow .15s,opacity .15s}
+button.pm-submit:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(59, 23, 87,.45)}
 button.pm-submit:active{transform:translateY(0)}
 button.pm-submit[disabled]{opacity:.6;cursor:wait;transform:none}
 .pm-err{display:none;margin:0 0 16px;padding:11px 14px;border-radius:12px;background:#fdf0ef;border:1px solid #f2c9c5;
@@ -70,9 +72,9 @@ button.pm-submit[disabled]{opacity:.6;cursor:wait;transform:none}
 .pm-thanks.show{display:block}
 .pm-thanks .pm-check{width:74px;height:74px;margin:4px auto 16px;border-radius:50%;
   background:linear-gradient(135deg,var(--teal),var(--teal-dark));display:flex;align-items:center;justify-content:center;
-  box-shadow:0 10px 28px rgba(6,48,31,.35);animation:pm-pop .4s cubic-bezier(.18,.89,.32,1.4) both}
+  box-shadow:0 10px 28px rgba(59, 23, 87,.35);animation:pm-pop .4s cubic-bezier(.18,.89,.32,1.4) both}
 @keyframes pm-pop{from{transform:scale(.4);opacity:0}to{transform:scale(1);opacity:1}}
-.pm-thanks h2{font-family:"Fraunces",Georgia,serif;font-size:22px;margin:0 0 8px;color:var(--teal-dark)}
+.pm-thanks h2{font-family:"Montserrat","Segoe UI",system-ui,sans-serif;font-size:22px;margin:0 0 8px;color:var(--teal-dark)}
 .pm-thanks p{font-size:15px;line-height:1.55;color:var(--ink-soft);margin:0 0 18px}
 .pm-thanks .pm-gstars{color:var(--star);font-size:22px;letter-spacing:3px}
 a.pm-google{display:inline-block;text-decoration:none;font-weight:800;font-size:15px;color:var(--teal-dark);
@@ -81,6 +83,11 @@ a.pm-google:hover{background:linear-gradient(135deg,var(--teal),var(--teal-dark)
 .pm-rev-back{margin-top:18px;font-size:14px}
 .pm-rev-back a{color:var(--teal);font-weight:700}
 @media (prefers-reduced-motion:reduce){.pm-rev-card,.pm-thanks .pm-check{animation:none}}
+.pm-rev-card{position:relative}
+.pm-rev-card::after{content:"";position:absolute;right:18px;top:18px;width:39px;height:26px;pointer-events:none;
+  background:radial-gradient(circle at 100% 50%,#ff7ae9 12.5px,transparent 13px) 0 0/13px 26px no-repeat,
+  radial-gradient(circle at 100% 50%,#e9dbf6 12.5px,transparent 13px) 13px 0/13px 26px no-repeat,
+  radial-gradient(circle at 100% 50%,#f7fd05 12.5px,transparent 13px) 26px 0/13px 26px no-repeat}
 </style>
 </head>
 <body>
@@ -88,9 +95,9 @@ a.pm-google:hover{background:linear-gradient(135deg,var(--teal),var(--teal-dark)
 <header class="pm-rev-head">
   <a href="../">
     <span class="pm-rev-mark" aria-hidden="true">
-      <img src="../assets/img/logo-mark.png" alt="" width="44" height="44">
+      <img src="../assets/img/logo-mark-v2.png" alt="" width="44" height="44">
     </span>
-    <span class="pm-rev-brand">Peaceful<small>Mental Health Services</small></span>
+    <span class="pm-rev-brand"><span class="bn-1">Peaceful</span> <span class="bn-2">Mental Health</span><small class="brand-sub" aria-label="Services"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></small></span>
   </a>
 </header>
 
@@ -216,6 +223,10 @@ a.pm-google:hover{background:linear-gradient(135deg,var(--teal),var(--teal-dark)
     window.scrollTo({ top: 0 });
   }
 })();
+</script>
+<script>
+(function(){function fit(){[].forEach.call(document.querySelectorAll(".pm-rev-brand"),function(b){var a=b.querySelector(".bn-1"),m=b.querySelector(".bn-2");if(!a||!m)return;m.style.fontSize="";var wa=a.getBoundingClientRect().width,wm=m.getBoundingClientRect().width;if(!wa||!wm)return;m.style.fontSize=(parseFloat(getComputedStyle(m).fontSize)*wa/wm).toFixed(2)+"px";});}
+fit();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);})();
 </script>
 </body>
 </html>

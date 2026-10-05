@@ -50,3 +50,54 @@
     a.addEventListener("click", function () { if (phone.matches) setOpen(false); });
   });
 })();
+
+/* Homepage (desktop): the header floats over the hero photo; it turns solid once the page scrolls */
+(function () {
+  if (!document.body.classList.contains("home-overlay")) return;
+  var header = document.querySelector(".site-header");
+  if (!header) return;
+  function onScroll() { header.classList.toggle("is-solid", window.scrollY > 40); }
+  function measure() { document.documentElement.style.setProperty("--hdr-h", header.offsetHeight + "px"); }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", measure);
+  onScroll(); measure();
+})();
+
+/* Every screen size: the crisis line can be dismissed, and the announcement pops up
+   2 seconds after the page opens and stays until it is closed (remembered for the visit) */
+(function () {
+  var crisis = document.querySelector(".crisis-bar");
+  if (crisis) {
+    try { if (sessionStorage.getItem("pmCrisisHidden")) crisis.classList.add("is-dismissed"); } catch (e) {}
+    var cx = crisis.querySelector(".crisis-close");
+    if (cx) cx.addEventListener("click", function () {
+      crisis.classList.add("is-dismissed");
+      try { sessionStorage.setItem("pmCrisisHidden", "1"); } catch (e) {}
+      window.dispatchEvent(new Event("resize"));
+    });
+  }
+
+  var bar = document.querySelector(".announce-bar");
+  if (!bar) return;
+  var timer = setTimeout(function () { if (!bar.hidden) bar.classList.add("is-shown"); }, 2000);
+  var x = bar.querySelector(".announce-close");
+  if (x) x.addEventListener("click", function () { clearTimeout(timer); bar.classList.remove("is-shown"); });
+})();
+
+/* Wordmark lockup: size "MENTAL HEALTH" so it is exactly as wide as "PEACEFUL" (SERVICES spreads via flex) */
+(function () {
+  function fit() {
+    [].forEach.call(document.querySelectorAll(".brand-name"), function (b) {
+      var a = b.querySelector(".bn-1"), m = b.querySelector(".bn-2");
+      if (!a || !m) return;
+      m.style.fontSize = "";
+      var wa = a.getBoundingClientRect().width, wm = m.getBoundingClientRect().width;
+      if (!wa || !wm) return;
+      var px = parseFloat(getComputedStyle(m).fontSize);
+      m.style.fontSize = (px * wa / wm).toFixed(2) + "px";
+    });
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  window.addEventListener("resize", fit);
+})();

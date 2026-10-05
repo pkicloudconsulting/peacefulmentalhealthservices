@@ -25,14 +25,14 @@
       chip: "What conditions do you treat?",
       q: "What conditions do you treat?",
       a: "We treat a full range of mental health conditions, including depression, anxiety and panic, ADHD, bipolar and mood disorders, PTSD and trauma, OCD, sleep problems, postpartum and PMDD, and eating disorders. See the full list on [Conditions We Treat](conditions/).",
-      kw: ["condition", "depression", "anxiety", "adhd", "bipolar", "ptsd", "trauma", "ocd", "insomnia", "postpartum", "pmdd", "eating", "diagnos", "treat"]
+      kw: ["condition", "depression", "anxiety", "adhd", "bipolar", "ptsd", "trauma", "ocd", "insomnia", "postpartum", "pmdd", "eating", "diagnos", "what do you treat", "conditions"]
     },
     {
       id: "therapy", topic: "services",
       chip: "Do you offer therapy?",
       q: "Do you offer therapy as well as medication?",
       a: "Yes, both. Psychotherapy here feels like a genuine conversation, not a clinical interview, and it can stand alone or work alongside medication management. Details on [Our Services](services/#psychotherapy).",
-      kw: ["therapy", "therapist", "counseling", "counselling", "talk", "psychotherapy", "cbt"]
+      kw: ["therapy", "therapist", "counseling", "counselling", "talk therapy", "psychotherapy", "cbt", "offer therapy", "do therapy", "therapy sessions", "see a therapist"]
     },
     {
       id: "genesight", topic: "services",
@@ -94,15 +94,71 @@
       id: "insurance", topic: "billing",
       chip: "Do you take my insurance?",
       q: "What insurance do you accept?",
-      a: "We accept most insurance plans, including commercial plans, Medicare, and Medicaid. When you request an appointment we verify your specific benefits before your first visit, so there are no surprises.",
+      a: "We accept most insurance plans, including commercial plans, Medicare, and Medicaid. When you request an appointment we verify your specific benefits before your first visit, so there are no surprises. The carriers we work with are listed on our [Insurance page](insurance/).\n\nNo insurance? Self-pay is available too.",
       kw: ["insurance", "medicare", "medicaid", "coverage", "covered", "plan", "anthem", "aetna", "cigna", "united", "tricare", "in network", "in-network"]
     },
     {
       id: "selfpay", topic: "billing",
       chip: "What if I do not have insurance?",
       q: "Do you offer self-pay options?",
-      a: "Yes, self-pay options are available if you are uninsured or prefer not to use insurance. [Contact us](contact/) and we will walk you through the rates before you commit to anything.",
-      kw: ["self pay", "self-pay", "cash", "no insurance", "uninsured", "out of pocket", "cost", "price", "fee", "how much"]
+      a: "You can still be seen without insurance. Self-pay options are available if you are uninsured, between plans, or prefer not to use insurance. [Contact us](contact/) and we will walk you through the rates before you commit to anything, so there are no surprises.",
+      kw: ["self pay", "self-pay", "cash", "no insurance", "uninsured", "out of pocket", "without insurance", "not insured", "pay myself", "private pay"]
+    },
+    {
+      id: "cost", topic: "billing",
+      chip: "How much does a visit cost?",
+      q: "How much does it cost?",
+      a: "With insurance, your cost depends on your plan (usually your copay or deductible). We verify your benefits before your first visit and let you know what to expect. If you are paying yourself, [contact us](contact/) and we will share our self-pay rates up front.",
+      kw: ["cost", "price", "fee", "fees", "how much", "expensive", "afford", "copay", "co-pay", "deductible", "rate", "rates", "charge", "bill", "billing"]
+    },
+    {
+      id: "referral", topic: "billing",
+      chip: "Do I need a referral?",
+      q: "Do I need a referral?",
+      a: "You do not need a referral to request an appointment with us. Some insurance plans require one for specialist care; we check that when we verify your benefits and will let you know.",
+      kw: ["referral", "refer", "referred", "primary care", "pcp", "doctor send"]
+    },
+    {
+      id: "ages", topic: "visits",
+      chip: "Do you see teens or children?",
+      q: "Who do you see? Do you see children?",
+      a: "We care for adults, 18 and over. If you are looking for help for a child or teen, their pediatrician or school counselor is a good first step for a referral, and in a crisis you can always call or text 988.",
+      kw: ["child", "children", "kid", "kids", "teen", "teens", "teenager", "adolescent", "minor", "son", "daughter", "under 18"]
+    },
+    {
+      id: "states", topic: "telehealth",
+      chip: "I live outside Virginia or Washington",
+      q: "Can you see me if I live in another state?",
+      a: "Our clinicians are licensed in Virginia and Washington State, so you need to be physically located in one of those two states at the time of each visit. If you are elsewhere, your insurance company or the [988 Lifeline](tel:988) can point you to local options.",
+      kw: ["another state", "other state", "out of state", "outside", "maryland", "dc", "california", "texas", "new york", "florida", "north carolina", "oregon", "idaho", "georgia", "travel", "traveling", "move", "moving"]
+    },
+    {
+      id: "adhd", topic: "services",
+      chip: "Do you treat ADHD?",
+      q: "Do you diagnose and treat ADHD?",
+      a: "Yes. We evaluate and treat ADHD in adults, starting with a careful diagnostic evaluation. Some ADHD medications have additional prescribing requirements, which your provider explains during your visit.",
+      kw: ["adhd", "attention", "focus", "focusing", "concentrate", "concentration", "adderall", "stimulant", "stimulants", "vyvanse", "ritalin"]
+    },
+    {
+      id: "meds", topic: "services",
+      chip: "How does medication management work?",
+      q: "How does medication management work?",
+      a: "Your provider prescribes thoughtfully, starts gently, and checks in regularly to see how you are doing, adjusting doses or switching medications when needed. The goal is the greatest relief with the fewest medications at the lowest effective doses. More on [Our Services](services/#medication).",
+      kw: ["medication", "medications", "meds", "medicine", "antidepressant", "ssri", "dose", "dosage", "side effect", "side effects", "pills"]
+    },
+    {
+      id: "privacy", topic: "telehealth",
+      chip: "Is it private and confidential?",
+      q: "Is my information private?",
+      a: "Yes. Your visits happen over a secure video platform and your health information is kept confidential, as required by law. You can read how we handle information in our [Privacy Policy](privacy-policy/).",
+      kw: ["private", "privacy", "confidential", "confidentiality", "secure", "safe", "hipaa", "record", "records", "employer", "who will know"]
+    },
+    {
+      id: "hours", topic: "contact",
+      chip: "What are your hours?",
+      q: "What are your office hours?",
+      a: "Our team answers messages Monday to Friday, 9 to 5, and replies to appointment requests within one business day. Visit times are arranged with you when you schedule, and online visits can often fit before or after work.",
+      kw: ["hours", "open", "opening", "closed", "weekend", "weekends", "saturday", "sunday", "evening", "evenings", "after work", "business hours"]
     },
     {
       id: "reach", topic: "contact",
@@ -116,7 +172,7 @@
       chip: "What do I do in a crisis?",
       q: "What should I do in a mental health crisis?",
       a: "This chat and our website are not monitored for emergencies. If you or someone you love is in crisis, call or text 988, the Suicide and Crisis Lifeline, available 24/7, or call 911. If it is safe to do so, do not stay alone; reach out to someone you trust as well.",
-      kw: ["crisis", "emergency", "urgent", "hotline", "988", "911", "help now", "right now"]
+      kw: ["crisis", "emergency", "hotline", "988", "911"]
     }
   ];
 
@@ -276,16 +332,59 @@
   /* ---------------- Matching engine ---------------- */
 
   function normalize(s) {
-    return " " + s.toLowerCase().replace(/[^a-z0-9@+\-\s]/g, " ").replace(/\s+/g, " ").trim() + " ";
+    s = s.toLowerCase().replace(/[\u2018\u2019]/g, "'")
+      .replace(/\bcan'?t\b/g, "cannot").replace(/\bwon'?t\b/g, "will not").replace(/n'?t\b/g, " not")
+      .replace(/\bi'?m\b/g, "i am").replace(/'s\b/g, "").replace(/'re\b/g, " are").replace(/'ve\b/g, " have");
+    return " " + s.replace(/[^a-z0-9@+\-\s]/g, " ").replace(/\s+/g, " ").trim() + " ";
+  }
+
+  /* Intent rules catch meaning that single keywords miss ("I don't have insurance" is about self-pay,
+     not about which insurance we take). Checked in order, before keyword scoring. */
+  var INTENTS = [
+    { id: "selfpay", re: /\b(no|not|without|lost|never had|do not have|does not have|have not got|uninsured)\b[^.?!]{0,30}\b(insurance|insured|coverage)\b|\bbetween (insurance|plans|jobs)\b|\buninsured\b|\b(insurance|coverage)\b[^.?!]{0,20}\b(expired|ended|lapsed|ran out|cancelled|canceled)\b/ },
+    { id: "insurance", re: /\b(aetna|anthem|cigna|united ?healthcare|uhc|optum|tricare|humana|kaiser|blue ?cross|bcbs|carefirst|sentara|premera|molina|ambetter|regence|medicare|medicaid|in network|take my insurance|accept my insurance)\b/ },
+    { id: "adhd", re: /\b(adhd|adderall|vyvanse|ritalin|stimulants?)\b/ },
+    { id: "cost", re: /\b(how much|cost|price|afford|expensive|copay|deductible|rates?)\b/ },
+    { id: "ages", re: /\b(see|treat|for|help|accept|take) (my |a |your )?(child|children|kids?|teens?|teenagers?|adolescents?|minors?|son|daughter)\b|\b(under 18|\d{1,2} ?(yr|year)s? old|minors?|adolescents?|teenagers?)\b/ },
+    { id: "states", re: /\b(another|other|different) state\b|\bout of state\b|\boutside (of )?(virginia|washington|va|wa)\b|\b(maryland|california|texas|new york|florida|north carolina|oregon|idaho|georgia|pennsylvania|new jersey|ohio)\b/ },
+    { id: "telehealth-where", re: /\b(in person|in-person|office|clinic|address|come in|visit you|physical location)\b/ },
+    { id: "crisis", re: /\b(emergency|crisis)\b/ }
+  ];
+  function intentFaq(text) {
+    var t = normalize(text);
+    for (var i = 0; i < INTENTS.length; i++) if (INTENTS[i].re.test(t)) return byId(INTENTS[i].id);
+    return null;
+  }
+
+  function stem(w) {
+    return w.replace(/(ies)$/, "y").replace(/(ing|ed|es|s)$/, "").replace(/(.)\1$/, "$1");
+  }
+  // one typo allowed (insert, delete, swap, replace) for words of 5+ letters
+  function near(a, b) {
+    if (a === b) return true;
+    if (a.length < 5 || b.length < 5 || Math.abs(a.length - b.length) > 1) return false;
+    var i = 0, j = 0, edits = 0;
+    while (i < a.length && j < b.length) {
+      if (a[i] === b[j]) { i++; j++; continue; }
+      if (++edits > 1) return false;
+      if (a[i + 1] === b[j] && a[i] === b[j + 1]) { i += 2; j += 2; continue; }
+      if (a.length > b.length) i++; else if (b.length > a.length) j++; else { i++; j++; }
+    }
+    return edits + (a.length - i) + (b.length - j) <= 1;
   }
 
   function scoreFaq(f, t) {
     var s = 0;
+    var words = t.trim().split(" "), stems = words.map(stem);
     f.kw.forEach(function (k) {
       var kk = k.toLowerCase();
-      if (t.indexOf(kk.indexOf(" ") !== -1 ? kk : " " + kk) !== -1) {
-        s += (kk.indexOf(" ") !== -1 ? 5 : 2) + Math.min(kk.length / 4, 3);
+      var hit;
+      if (kk.indexOf(" ") !== -1) hit = t.indexOf(" " + kk + " ") !== -1 || t.indexOf(" " + kk) !== -1;
+      else {
+        var ks = stem(kk);
+        hit = stems.indexOf(ks) !== -1 || words.some(function (w) { return near(w, kk) || near(stem(w), ks); });
       }
+      if (hit) s += (kk.indexOf(" ") !== -1 ? 5 : 2) + Math.min(kk.length / 4, 3);
     });
     // bonus: words from the question itself
     normalize(f.q).split(" ").forEach(function (w) {
@@ -316,6 +415,9 @@
       saveState();
       return;
     }
+
+    var intent = intentFaq(text);
+    if (intent) { answer(intent, text); return; }
 
     var ranked = matchAll(text);
     var strongFaq = ranked.length && ranked[0].s >= 4;
