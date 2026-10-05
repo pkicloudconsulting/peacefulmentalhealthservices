@@ -1,0 +1,12 @@
+# Cloudflare Worker config for the Peaceful Mental Health Services consultation form.
+# Optional CLI deploy (the dashboard route in SETUP.md needs no install):
+#   cd worker && npx wrangler deploy
+#   npx wrangler secret put RESEND_API_KEY
+name = "pmhs-consultation"
+main = "consultation-worker.js"
+compatibility_date = "2024-11-01"
+
+# Rate limiting + duplicate guard (namespace "pmhs-consultation-RATE_LIMIT", created 2026-10-05)
+[[kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "612d2406b6d040d9a7323dbcb86441c2"

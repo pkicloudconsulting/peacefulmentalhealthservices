@@ -1481,3 +1481,13 @@ body.home-overlay .site-header:not(.is-solid) .site-nav .nav-item > a[aria-curre
 .step-glass--panel .step-track { margin-top: 0.25rem; height: 6px; }
 .step-glass--panel .step-track span { width: 14px; height: 14px; margin: -7px 0 0 -7px; box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3); }
 .step-glass--panel .step-track-labels { font-size: 0.5rem; margin-top: 0.35rem; white-space: nowrap; letter-spacing: 0.02em; }
+
+/* ================= Round 46 (2026-10-05): phone hero copy sits lower and a size smaller ================= */
+@media (max-width: 640px) {
+  body.home-overlay .hero-peace .hero-peace-grid { padding-top: calc(var(--hdr-h, 72px) + 6.6rem); padding-bottom: 4.4rem; }
+  .hero-peace .hero-peace-title { font-size: clamp(1.45rem, 7vw, 1.95rem); }
+  .hero-peace .hero-slogan { font-size: 0.86rem; }
+  .hero-peace .hero-lede-desktop { font-size: 0.84rem; line-height: 1.5; margin-bottom: 0.9rem; }
+  .hero-peace .hero-ctas .btn { padding: 0.55rem 1rem; font-size: 0.8rem; }
+  .hero-peace .hero-note { font-size: 0.68rem; }
+}
