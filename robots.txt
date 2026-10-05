@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /leave-a-review/
 
-Sitemap: https://pkicloudconsulting.github.io/peacefulmentalhealthservices/sitemap.xml
+Sitemap: https://www.peacefulmentalhealthservices.com/sitemap.xml
