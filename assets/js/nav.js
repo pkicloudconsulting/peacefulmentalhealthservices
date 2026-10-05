@@ -49,6 +49,24 @@
   [].forEach.call(nav.querySelectorAll(".nav-drop a"), function (a) {
     a.addEventListener("click", function () { if (phone.matches) setOpen(false); });
   });
+
+  // Desktop: keep a dropdown open while the pointer travels from its menu link down to the panel,
+  // so visitors can reach the Get Care links without the menu snapping shut on the way.
+  [].forEach.call(nav.querySelectorAll(".nav-item"), function (item) {
+    var timer;
+    item.addEventListener("mouseenter", function () {
+      if (phone.matches) return;
+      clearTimeout(timer);
+      [].forEach.call(nav.querySelectorAll(".nav-item.is-hover"), function (other) {
+        if (other !== item) other.classList.remove("is-hover");
+      });
+      item.classList.add("is-hover");
+    });
+    item.addEventListener("mouseleave", function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () { item.classList.remove("is-hover"); }, 350);
+    });
+  });
 })();
 
 /* Homepage (desktop): the header floats over the hero photo; it turns solid once the page scrolls */

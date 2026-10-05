@@ -19,7 +19,7 @@ const PHONE = "+1 (804) 465-9225";
 const PHONE_TEL = "+18044659225";
 const HOURS = "Monday to Friday, 9:00 am to 5:00 pm";
 const SITE = "https://www.peacefulmentalhealthservices.com/";
-const LOGO_URL = "https://www.peacefulmentalhealthservices.com/assets/img/logo-mark-v5.png";
+const LOGO_URL = "https://www.peacefulmentalhealthservices.com/assets/img/logo-mark.png";
 
 const ALLOWED_ORIGINS = [
   "https://www.peacefulmentalhealthservices.com",
@@ -33,12 +33,12 @@ const RATE_LIMIT_MAX = 3;
 const RATE_LIMIT_WINDOW_SECONDS = 600;
 const DUPLICATE_WINDOW_SECONDS = 120;
 
-// Palette ("Soothing and grounded")
-const PERIWINKLE = "#5a6a9c";
-const SAGE_GREEN = "#3f7a66";
-const INK = "#24303a";
-const SOFT = "#56616b";
-const MIST = "#eef3f8";
+// Palette (Alma green look; names kept so the templates below need no changes)
+const PERIWINKLE = "#0b4934";
+const SAGE_GREEN = "#0b4934";
+const INK = "#1f2b26";
+const SOFT = "#4f5b55";
+const MIST = "#e9f1ec";
 const FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
 
 // Form fields the Worker reads (names match the care finder on /contact/).
