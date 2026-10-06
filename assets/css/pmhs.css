@@ -1494,9 +1494,10 @@ body.home-overlay .site-header:not(.is-solid) .site-nav .nav-item > a[aria-curre
 
 /* Round 47: back to the Alma green look (client reference screenshot, 2026-10-05).
    Colours were remapped above; these rules restore the green look's button roles, the single coral hero word and the round leaf logo. */
-.site-nav a.btn, .header-cta.btn-primary { background: var(--teal); color: #fff; box-shadow: none; text-shadow: none; }
-.site-nav a.btn:hover, .header-cta.btn-primary:hover { background: var(--teal-dark); color: #fff; }
-body.home-overlay .site-header:not(.is-solid) .site-nav a.btn { background: var(--teal); color: #fff; }
+.site-nav a.btn, .site-nav a.btn-primary, .header-cta.btn-primary,
+body.home-overlay .site-nav a.btn, body.home-overlay .site-header:not(.is-solid) .site-nav a.btn { background: var(--teal); color: #fff; box-shadow: none; text-shadow: none; }
+.site-nav a.btn:hover, .site-nav a.btn-primary:hover, .header-cta.btn-primary:hover,
+body.home-overlay .site-nav a.btn:hover { background: var(--teal-dark); color: #fff; }
 .btn-accent, .hero-peace .btn-accent { background: var(--apricot); color: #fff; box-shadow: none; text-shadow: none; }
 .btn-accent:hover, .hero-peace .btn-accent:hover { background: var(--apricot-dark); color: #fff; }
 .hero-peace .hero-peace-title .hero-word { color: var(--wcl, #ffb8a2); }
